@@ -1,9 +1,8 @@
-
 RewriteOptions inherit
 RewriteEngine On
 
-RewriteCond %{HTTP_HOST} ^opris.exchange [NC]
-RewriteRule ^(.*)$ https://www.opris.exchange/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^opris.tokenloopz.com [NC]
+#RewriteRule ^(.*)$ https://opris.tokenloopz.com/$1 [L,R=301]
 
 # Redirect multiple trailing slashes to a single slash
 RewriteCond %{REQUEST_URI} ^(.+?)/{2,}$  
