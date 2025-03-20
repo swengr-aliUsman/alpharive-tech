@@ -1,0 +1,234 @@
+form#form-help input,
+textarea#usermessage {
+    border: none;
+    margin-bottom: 15px;
+    height: 60px;
+    padding-left: 0
+}
+
+.form-sectn {
+    padding: 0 0 50px
+}
+
+form#form-help input {
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1 !important
+}
+
+section.form-sectn h1,
+section.form-sectn h3 {
+    font-weight: 800
+}
+
+section.form-sectn h3 {
+    margin-bottom: 40px
+}
+
+textarea#usermessage {
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid #d1d1d1;
+    margin-top: 5px
+}
+
+select#userbudget {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 30px;
+    height: 60px;
+    padding-left: 0;
+    border-bottom: 1px solid #d1d1d1
+}
+
+.form-controls input[type=checkbox] {
+    height: auto !important
+}
+
+input.form-control.button-submit {
+    display: inline-block;
+    padding: 15px 58px 19px !important;
+    width: auto;
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(180deg, #ff0f0f 0, #ff4849 100%);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    border-radius: 50px !important;
+    margin-bottom: 0 !important;
+    margin-top: 20px;
+    height: 50px !important;
+}
+
+ul.contact-social-icons {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px
+}
+
+ul.contact-social-icons li a img {
+    width: 40px;
+    margin-right: 10px;
+    transition: .3s ease-in-out
+}
+
+ul.contact-social-icons li {
+    margin-bottom: 20px
+}
+
+ul.contact-social-icons li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000
+}
+
+.left-form {
+    padding-right: 0 !important
+}
+
+.main-social-form {
+    background: #373636;
+    padding: 40px !important;
+    color: #fff
+}
+
+ul.contact-social-icons,
+ul.contact-social-icons li:last-child {
+    margin-bottom: 0
+}
+
+.right-form {
+    padding-left: 30px
+}
+
+ul.contact-social-icons li a:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #dddbdb;
+    border-radius: 50%
+}
+
+form#form-help input[type=email],
+form#form-help input[type=text],
+form#form-help select,
+form#form-help textarea {
+    font-size: 20px;
+    color: #7b838a;
+    background: transparent;
+    appearance: auto;
+}
+
+form#form-help label {
+    font-size: 20px
+}
+
+select#countries {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #ccc
+}
+
+input#social-info-block {
+    font-size: 20px;
+    width: 77%
+}
+
+select#id_select2_example {
+    width: 20%;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    height: 60px;
+    padding-left: 0;
+    border-bottom: 1px solid #d1d1d1
+}
+
+.social-info-block-outer {
+    display: flex;
+    justify-content: space-between
+}
+
+.dropdown .select-media-inner a {
+    background: 0 0;
+    display: block;
+    padding-right: 0;
+    border: none;
+    width: 150px;
+    border-bottom: 1px solid #ccc !important
+}
+
+.dropdown .select-media-dropdown,
+.dropdown .select-media-inner {
+    margin: 0;
+    padding: 0
+}
+
+.dropdown .select-media-inner a span {
+    cursor: pointer;
+    padding: 15px 0;
+    color: #757575;
+    font-size: 20px !important;
+    display: inline-block;
+    width: 100%
+}
+
+.select-media-inner i {
+    font-size: 12px !important;
+    float: right;
+    position: relative;
+    top: 5px
+}
+
+.dropdown .select-media-dropdown {
+    background: #fff;
+    color: #c5c0b0;
+    display: none;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    top: 65px;
+    width: auto;
+    min-width: 160px;
+    list-style: none
+}
+
+.dropdown .select-media-dropdown li a {
+    padding: 10px 5px;
+    display: block
+}
+
+.dropdown img.flag {
+    border: none;
+    vertical-align: middle;
+    margin-left: 0;
+    width: 30px;
+    margin-right: 10px
+}
+
+.dropdown a,
+.dropdown a:visited {
+    color: #816c5b;
+    text-decoration: none;
+    outline: 0
+}
+
+.left-form.right-form {
+    padding-left: 40px !important
+}
+
+form#form-help {
+    padding: 20px;
+    background: transparent;
+    border-radius: 9.062px;
+    box-shadow: 8px 8px 16px rgb(255 149 149 / 20%)
+}
+
+form#form-help h4 {
+    color: #000 !important;
+    letter-spacing: 1px;
+    font-weight: 800 !important;
+    font-size: 22px !important
+}

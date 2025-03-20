@@ -1,0 +1,1009 @@
+ul {
+    padding: 0;
+}
+
+body {
+    font-family: poppins !important;
+}
+
+.footer-part {
+    margin-top: 100px;
+}
+
+.index-form-sectn {
+    padding-top: 80px !important;
+}
+.para-banner{
+    max-width: 568px;
+}
+.multiple-type-ced,
+.most-renow-cesdc,
+.wherever-your-users-are,
+.industry-best-ctsf,
+.ready-made-ce-clone-script,
+.engaging-tool-ces,
+.build-on-any-platform,
+.wherever-your-users-are,
+.our-client-rpfgb,
+.faq-sectn,
+.bitstamp-resemble,
+.crypto-success-ess {
+    padding-top: 60px !important;
+}
+
+.multiple-type-ced-head p,
+.most-renow-cesdc-title p,
+.industry-best-ctsf-title,
+.crypto-success-ess-title p,
+.ready-made-ce-clone-script-title p,
+.engaging-tool-ces p,
+.our-client-rpfgb-content-title p,
+.industry-best-ctsf-title p,
+.crypto-success-ess p,.para-banner p {
+    font-family: poppins !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    /* margin-bottom: 0; */
+}
+.types-crypto-part-head p{
+     font-family: poppins !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+
+.light-pink-cont p{
+    font-family: poppins !important;
+    font-size: 18px !important;
+    font-weight: 400;
+    letter-spacing: 0em;
+}
+.multiple-type-ced-head h3,
+.most-renow-cesdc-title h4,
+.industry-best-ctsf-title h4,
+.crypto-success-ess-title h4,
+.ready-made-ce-clone-script-title h4,
+.engaging-tool-ces h4,
+.build-on-any-platform-title h4,
+.industry-best-ctsf-title h4,
+.our-client-rpfgb-content-title h4,
+.types-crypto-part-head h2,
+.modern-tech-title h4,
+.crypto-success-ess h4, 
+.crypto-success-ess h2{
+    font-size: 34px !important;
+    font-weight: 700 !important;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    font-family: poppins !important;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.our-client-rpfgb-content-title h4{
+    margin-bottom: 0!important;
+}
+.most-renow-cesdc-title,
+.industry-best-ctsf-title,
+.engaging-tool-ces-title,
+.build-on-any-platform-title {
+    text-align: center;
+    margin: 20px auto 40px;
+    max-width: 899px;
+}
+
+.multiple-type-ced-head,
+.ready-made-ce-clone-script-title,
+.engaging-tool-ces-title,
+.modern-tech-title,
+.our-client-rpfgb-content-title {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    text-align: center;
+}
+
+.crypto-success-ess-img,
+.multiple-type-ced-img,
+.crypto-success-ess-img {
+    text-align: center;
+}
+.cesd-services-img img {
+    /*height: 360px;*/
+        width: 462px;
+    height: auto;
+}
+/* section.header-part.sticky-top {
+    background: transparent !important;
+    z-index: 9;
+} */
+
+/*.banner-part {*/
+/*    position: relative;*/
+/*    background: no-repeat;*/
+/*    margin-top: -126px;*/
+/*    background-image: url("../../assetsindex/Image/banner.webp");*/
+    /* height: 100vh; */
+/*    color: white;*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+
+.banner-right-img {
+    text-align: center;
+}
+.banner-leftt {
+    /* padding: 170px 0; */
+    text-align: left;
+}
+
+section.banner-part h1 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.02em;
+    font-family: poppins !important;
+}
+
+
+
+/* Explore The Multiple Types Of Cryptocurrency Exchange Development */
+
+
+
+.light-pink-img {
+    width: 61px;
+    height: 65px;
+    border-radius: 5px;
+    border: 1px;
+    background: #FFA2A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -31px;
+}
+
+.light-pink-cont {
+    width: 90%;
+}
+.light-pink-cont h3 {
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: poppins !important;
+}
+.proc-dev:last-child {
+    height: 0;
+    min-height: 70px;
+}
+
+
+/* Get to know about the cryptocurrency exchange software development services */
+.cesd-services-img {
+    margin: 20px 20px 20px 0;
+    text-align: center;
+}
+
+.cesd-services-left {
+    position: relative;
+}
+
+.cesd-services-left::before {
+    position: absolute;
+    content: "";
+    background-image: url(../Image/background.webp);
+    width: 525px;
+    top: 36%;
+    height: 700px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-size: contain;
+    left: -300px;
+    z-index: -99;
+}
+.banner-btn ul{
+    display:flex;
+    padding-left:0;
+}
+section.crypto-success-ess .banner-btn {
+    justify-content: center;
+    display: flex;
+    padding-top: 30px;
+}
+
+.mobile-view-show{display: none;}
+
+@media (max-width:991.98px){
+    .cesd-services-img {
+    display: none;
+}
+
+section.most-renow-cesdc .inner-block-build{height:auto !important;}
+
+section.most-renow-cesdc .inner-block-build h4 {max-width: 100% !important;}
+
+section.engaging-tool-ces .engaging-tool-ces-center {display: none;}
+
+.engaging-tool-ces-right {padding-top: 15px !important;}
+.desktop-view-show {display: none !important;}
+.mobile-view-show {
+    display: flex !important;
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+/*.crypto-success-ess-img img {*/
+/*    height: 300px;*/
+/*    width: auto;*/
+/*    min-height: 300px;*/
+/*    max-height: 300px;*/
+/*}*/
+
+section.crypto-success-ess .banner-btn {
+    justify-content: center !important;
+}
+    
+}
+
+@media (min-width: 992px) {
+    .num-fet-paxful.fixed-cls .cesd-services-left {
+            position: sticky;
+    top: 0;
+    width: auto;
+    }
+}
+
+.inner-dev {
+    border: 1.5px solid #FEA9A9;
+    border-radius: 5px;
+    padding: 20px 30px;
+    box-shadow: 6.477003574371338px 6.477003574371338px 12.954007148742676px 0px #FF959533;
+
+}
+
+.resemble-bitstamp-right.types-crypto-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inner-dev h2 {
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    font-family: poppins !important;
+}
+
+.inner-dev p {
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0 !important;
+    font-family: poppins !important;
+}
+
+/* Industry Best Crypto Trading Software Features */
+.crypto-trading-sw-features-tab {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+ul.nav.nav-tabs.mx-4.crypto-trading-sw-features {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+
+li.nav-item a.nav-link.crypto-trading-sw-features{
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    color: #000000 !important;
+    font-family: poppins !important;
+}
+
+.crypto-trading-sw-features {
+    border-bottom: none !important;
+    position: relative;
+}
+
+div#adminFeatures,
+div#userFeatures,
+div#securityFeatures,
+div#addOnFeatures {
+    padding: 0 20px;
+}
+
+.crypto-trading-sw-features::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    background: #FFD7D7;
+    right: -13px;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.nav-tabs .ctsf .nav-link.active {
+    border-right: 14px solid #CC1212 !important;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 !important;
+    position: relative;
+    white-space: nowrap;
+}
+
+li.nav-item.ctsf {
+    margin-right: -13px;
+    white-space: nowrap;
+}
+.meta-vese-inner .inner-tab-content .techno {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+/* .nav-tabs {
+    border-right: 13px #FFD7D7 solid;
+    border-radius: 10px;
+} */
+.nav-tabs .ctsf .nav-link {
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #000000 !important;
+    font-family: poppins !important;
+    padding:12px 30px!important; 
+}
+
+.nav-tabs .ctsf .nav-link:hover {
+    border: none;
+    outline: none;
+}
+.nav-link {
+    transition: none !important;
+}
+
+.features-box {
+
+    border: 1.5px solid #FEA9A9
+}
+
+.tab-content-features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.features-box {
+    border: 1.5px solid #FEA9A9;
+    padding: 10px 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    height: 65px;
+}
+
+.features-box h5 {
+    font-size: 16px !important;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 0 !important;
+}
+.ecs-block-text a {
+    color: #000;
+    text-decoration: none;
+}
+/* One Of The Most Renowned Cryptocurrency Exchange Software Development Company */
+.most-renow-cesdc {
+    text-align: center;
+}
+
+.inner-block-build-text {
+    text-align: center;
+}
+
+.inner-block-build-text span {
+    font-size: 57px !important;
+    font-weight: 700 !important;
+    line-height: 36px;
+    color: #FF0000 !important;
+    font-family: poppins !important;
+}
+
+.inner-block-build-text h6 {
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 10px;
+    font-family: poppins !important;
+}
+
+
+section.most-renow-cesdc.extended-service .inner-block-build {
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 371px;
+}
+
+section.most-renow-cesdc.extended-service .inner-block-build {
+    border-radius: 0px;
+}
+
+section.most-renow-cesdc .inner-block-build {
+    margin: 40px 0;
+    padding: 35px 0;
+    background: #f8fcff;
+    box-shadow: 8px 8px 16px rgb(173 173 173 / 46%);
+    border-radius: 15px;
+    border: 1.5px solid rgb(241 241 241);
+    height: 65%;
+}
+
+section.most-renow-cesdc .inner-block-build .inner-block-build-img {
+    margin-bottom: 25px;
+
+}
+
+section.most-renow-cesdc.extended-service .inner-block-build-img img {
+    min-height: 48px;
+}
+
+section.most-renow-cesdc .inner-block-build h4 {
+    font-weight: 600;
+    font-size: 20px !important;
+    font-family: poppins !important;
+    max-width: 150px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Business Benefits Selecting Our White Label Crypto Exchange Software */
+.dot-img-text {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+    padding: 12px;
+    text-align: center;
+}
+
+.dot-img-text h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: poppins !important;
+    white-space: nowrap;
+}
+
+
+/* Ready Made Cryptocurrency Exchange Clone Scripts */
+.ready-made-ce-clone-script-block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+
+/* ecs-block-img image */
+.exchange-clone-script-block {
+    border: 1.36px solid #FEA9A9;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    gap: 12px;
+    cursor: pointer;
+    /* margin: 20px 10px; */
+    padding: 10px 6px;    text-decoration: none;
+    color: #000 !important;
+}
+
+.exchange-clone-script-block:hover {
+    background: rgb(239 185 185);
+
+}
+
+.ecs-block-text {
+    font-size: 17px !important;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-family: poppins !important;
+}
+
+.ecs-block-img img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Engaging Tools Of Cryptocurrency Exchange Script */
+
+.engaging-tool-ces-left {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.engaging-tool-ces-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.engaging-tool-ces-right {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.engaging-tool-ces-block h5 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 22px;
+
+    font-family: poppins !important;
+}
+
+/* Cryptocurrency exchange software development for Android and iOS */
+section.build-on-any-platform {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+section.build-on-any-platform h2 {
+    font-weight: 600;
+}
+
+section.build-on-any-platform.extended-service .inner-block-build {
+    padding-left: 30px;
+    padding-right: 30px;
+    min-height: 371px;
+}
+
+section.build-on-any-platform.extended-service .inner-block-build {
+    border-radius: 0px;
+}
+
+section.build-on-any-platform .inner-block-build {
+    margin: 40px 0;
+    padding: 35px 0;
+    background: #f8fcff;
+    box-shadow: 8px 8px 16px rgba(255, 149, 149, 0.2);
+    border-radius: 37px;
+}
+
+section.build-on-any-platform .inner-block-build .inner-block-build-img {
+    margin-bottom: 25px;
+}
+
+section.build-on-any-platform.extended-service .inner-block-build-img img {
+    min-height: 48px;
+}
+
+section.build-on-any-platform .inner-block-build h5 {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: poppins !important;
+}
+
+/* Tech Stack Of Cryptocurrency Exchange Software */
+.meta-vese-inner .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.meta-vese-inner .tabs .tablinks.active {
+    border-bottom: 3px solid #ff1717;
+}
+
+.meta-vese-inner .tabs .tablinks {
+    background: 0 0;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 10px;
+}
+h4.meta-head {
+    margin-bottom: 0px;
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.meta-vese-inner .inner-tab-content,
+section.dev-approach {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.meta-vese-inner .inner-tab-content .techno {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Our Clients Reliable partner for global brands */
+.our-client-rpfgb-content-title h5 {
+    font-size: 35px !important;
+    font-weight: 700;
+    line-height: 37px;
+    font-family: poppins !important;
+}
+
+.our-client-rpfgb-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+
+/* faq */
+section.perks-benefits-section span.numeric {
+    font-weight: 400 !important;
+    display: inline-block !important;
+    margin-right: 15px !important;
+    font-size: 25px !important;
+    background: #212529 !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    color: #fff !important;
+    position: relative !important;
+    top: -2px !important;
+    line-height: 40px;
+    font-family: poppins !important;
+}
+
+span.mp-icon {
+    float: right;
+    position: relative;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-family: poppins !important;
+    font-size: 17px;
+}
+
+.accrd-panel-body-cdp.active,
+.accrd-panel-body-sdl.active,
+.accrd-panel-body-sps.active,
+.block-1 .accrd-panel-body.active,
+.inner-risk-body.active {
+    display: block;
+}
+
+.accrd-panel-body-cdp,
+.accrd-panel-body-sdl,
+.accrd-panel-body-sps,
+.block-1 .accrd-panel-body,
+.inner-risk-body,
+.inner-software-mobile {
+    display: none;
+}
+
+.perks-benfits p {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+span.numeric {
+    font-size: 48px !important;
+    color: #cc1212;
+    font-weight: 800 !important;
+    margin-right: 30px;
+    font-family: poppins !important;
+}
+
+.accrd-panel-head.active span.mp-icon {
+    background: #000;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    transform: rotate(45deg);
+}
+
+/* section.faq-sectn {
+    padding: 60px 0;
+} */
+section.faq-sectn h3 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.faq-sectn.contain-width,
+section.faq-sectn .contain-width {
+    max-width: 980px;
+}
+
+
+.block-1.coloured {
+    background: #fce5e5;
+}
+
+.block-1 {
+    border-bottom: 1px solid #e9e4e4;
+    padding: 20px;
+    background: rgba(252, 229, 229, 0.4);
+}
+
+.block-1 .accrd-panel-head {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.perks-benfits h4 {
+    display: flex;
+
+}
+
+.accrd-title {
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: poppins !important;
+
+}
+
+.block-1 .accrd-panel-body.active {
+    display: block;
+}
+
+.perks-benfits p {
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: poppins !important;
+
+}
+
+@media (min-width: 1025px) {
+    .faq-sectn .perks-benfits p {
+        padding-left: 77px
+    }
+
+    span.numeric.n1 {
+        margin-right: 39px
+    }
+}
+
+/* form */
+.bca-clone-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+/* contact us form */
+.form-left-content h5 {
+    font-size: 45px !important;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    font-family: poppins !important;
+}
+
+.form-left-content h6 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    font-family: poppins !important;
+}
+
+.form-left-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-family: poppins !important;
+}
+
+.form-content-us {
+    padding: 20px 0;
+    display: flex;
+}
+
+.form-mail,
+.form-telegram,
+.form-whatsapp {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.whatsapp-title,
+.telegram-title,
+.mail-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-family: poppins !important;
+
+}
+
+a.mail-id,
+a.telegram-id,
+a.whatsapp-id {
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: black;
+    font-family: poppins !important;
+
+}
+
+.form-end-logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+
+}
+
+/* rating star */
+.ratings {
+    margin-right: 10px;
+}
+
+.ratings svg{
+    width: 20px;
+}
+
+.ratings svg.rated {
+    fill: #DC2626 !important;
+}
+
+
+
+.small-ratings i {
+    color: #cecece !important
+}
+
+.review-stat {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 2px;
+    font-family: poppins !important;
+}
+.proc-dev {
+    position: relative;
+    margin: auto;
+    min-height: 116px;
+    border-left: 3px dashed;
+    left: 40px;
+    bottom: 0;
+    z-index: -1;
+    display: flex;
+    align-items: stretch;
+}
+
+
+.light-pink-cont {padding-left:0;}
+
+.light-pink-img {
+    width: 61px;
+    height: 65px;
+    border-radius: 5px;
+    border: 1px;
+    background: linear-gradient(0deg, #FFA2A2, #FFA2A2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -31px;
+}
+.opris-exchange .inner-block-build-text span {
+    line-height: 42px;
+}
+.nav-tabs .ctsf .nav-link {
+width:250px;}
+
+
+/*** index page new css  **/
+
+section#numerous-feature-id.absolute-cls .cesd-services-left {
+    position: absolute;
+    bottom: 0;
+}
+
+section#numerous-feature-id .types-crypto-part-head {
+    position: relative;
+}
+
+.landing-page-main-part section.crypto-success-ess .banner-btn {
+    display: flex;
+    padding-top: 30px;
+    justify-content: flex-start;
+}
+
+body.homepage-page.landing-page-main-part .banner-btn li.nav-item.last-menu:first-child {
+    margin-left: 0px;
+}
+@media(max-width: 767.98px) {
+    .banner-part{
+        background:#000!important;
+    }
+   li.nav-item.drop-down-menu-clone ul.drop-down-list-clone  {
+        width: 100% !important;
+        top: 1px !important;
+        margin-right: 0;
+        right: 0 !important;
+    }
+    li.nav-item.drop-down-menu-exch ul.drop-down-list-exch{
+        width: 100% !important;
+        top: -28px !important;
+        margin-right: 0;
+        right: 0 !important;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1375.98px){
+    section.header-part{
+        overflow: visible !important;
+}
+li.nav-item.drop-down-menu-exch ul.drop-down-list-exch {
+     margin-right: 0 !important; 
+    width: 1156px !important;
+    right: 0% !important;
+}
+li.nav-item.drop-down-menu-clone ul.drop-down-list-clone {
+    margin-right: -440px !important;
+    width: 1194px !important;
+}
+}
+ ul.drop-down-list-clone {
+    margin-right: -440px !important;
+    width: 1280px !important;
+}
+ ul.drop-down-list-exch {
+    margin-right: -510px !important;
+    width: 1420px !important;
+}

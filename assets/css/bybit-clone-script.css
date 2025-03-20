@@ -1,0 +1,945 @@
+ul {
+    padding: 0;
+}
+
+body.bybit {
+    font-family: poppins !important;
+}
+
+body.bybit li.nav-item a.nav-link {
+    color: rgba(0, 0, 0, 1) !important;
+}
+
+/* new css */
+body.bybit section.banner .para-banner p {
+
+font-size: 18px;
+
+font-weight: 400;
+
+line-height: 27px;
+
+letter-spacing: 0em;
+
+text-align: left;
+
+max-width: 510px;
+}
+section.banner {
+    position: relative;
+    z-index: 0;
+}
+body.bybit .bybit-business-benefits-left h4.bybit-title,
+body.bybit .bybit-business-benefits-left p.bybit-title-para {
+    text-align: left;
+}
+
+body.bybit section.bybit-business-benefits {
+    padding-top: 60px;
+}
+
+body.bybit section.bybit-exchange-software,
+body.bybit section.optimized-bybit-clone,
+body.bybit section.futuristic-features,
+body.bybit section.faq-sectn,
+body.bybit section.index-form-sectn,
+body.bybit section.multi-layered-security-features,
+body.bybit section.bybit-business-benefits,
+body.bybit section.build-on-any-platform.wherever-your-users-are,
+body.bybit section.bybit-services,
+body.bybit section.bybit-worflow,
+body.bybit section.bybit-admin-user-features,
+.bybit-types-orders {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.row.bybit-types-orders-row {
+    position: relative;
+    padding-top: 40px;
+}
+
+.col-xl-6.col-lg-6.col-md-12.col-sm-12.crypto-exchange-right {
+    position: relative;
+}
+
+.crypto-exchange-right::before {
+    border: 2px dashed black;
+    position: absolute;
+    height: 69%;
+    content: '';
+    left: 8%;
+    top: 55px;
+}
+
+body.bybit section.banner .banner-left {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+}
+
+body.bybit section.banner h1.head-banner-head-hightlght {
+    margin-bottom: 24px;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+body.bybit h3.bybit-title, body.bybit h4.bybit-title, body.bybit h5.bybit-title {
+    font-size: 40px !important;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+body.bybit p.bybit-content-para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+
+
+}
+
+.features-content-block.card p.bybit-content-para,
+.futuristic-features-block.inner-block-build.card p.bybit-content-para {
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+body.bybit section.futuristic-features h5.card-title,
+.features-content-block.card h5.card-title {
+    padding-top: 20px;
+    font-size: 20px !important;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+body.bybit section.bybit-exchange-software p.bybit-content-para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    /* padding-top: 30px; */
+    padding-bottom: 25px;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+section.optimized-bybit-clone h4.bybit-title.text-start {
+    margin-bottom: 10px !important;
+}
+
+body.bybit p.bybit-title-para {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+section.futuristic-features p.bybit-title-para {
+    margin-bottom: 40px !important;
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+section.multi-layered-security-features p.bybit-title-para {
+    max-width: 665px;
+    margin: 0 auto 40px;
+}
+
+section.bybit-services .dot-img-text h6 {
+    margin-bottom: 0;
+    /* margin: 0 auto; */
+}
+
+section.build-on-any-platform.wherever-your-users-are p.bybit-title-para {
+    max-width: 725px;
+    margin: 0 auto 40px;
+}
+
+section.futuristic-features .futuristic-features-block.inner-block-build.card {
+    box-shadow: 8px 8px 16px 0px #FF959533;
+    border: navajowhite;
+    padding: 20px 15px;
+    text-align: center;
+    min-height: 310px;
+    background: #F8FCFF;
+    margin: 10px;
+    border-radius: 13px;
+}
+
+body.bybit section.multi-layered-security-features .bybit-exchange-app {
+    box-shadow: 0px 4px 4px 0px #0000001A;
+    padding: 12px 20px;
+    display: flex;
+    gap: 20px;
+    border-radius: 8px;
+    margin-top: 16px;
+    background: #F8FCFF;
+    align-items: center;
+}
+
+section.multi-layered-security-features h5.bybit-exchange-app-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+
+
+
+
+body.bybit section.crypto-success-ess .dot-img-text {
+    padding: 12px 0;
+}
+
+body.bybit .row.bybit-various-platform {
+    display: flex;
+    justify-content: center;
+}
+
+body.bybit .proc-dev:last-child {
+    /* height: 0; */
+    /* min-height: 0; */
+}
+
+
+body.bybit .proc-dev {
+    margin-left: 40px;
+    display: flex;
+}
+
+body.bybit .light-pink-img {
+    width: 61px;
+    height: 65px;
+    border-radius: 5px;
+    border: 1px;
+    background: #FFA2A2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -31px;
+}
+
+body.bybit .light-pink-cont {
+    width: 90%;
+}
+
+body.bybit .light-pink-cont h5 {
+    font-size: 23px !important;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: poppins !important;
+}
+
+
+
+
+section.perks-benefits-section span.numeric {
+    font-weight: 400 !important;
+    display: inline-block !important;
+    margin-right: 15px !important;
+    font-size: 25px !important;
+    background: #212529 !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    color: #fff !important;
+    position: relative !important;
+    top: -2px !important;
+    line-height: 40px;
+    font-family: poppins !important;
+}
+
+span.mp-icon {
+    float: right;
+    position: relative;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    font-family: poppins !important;
+    font-size: 17px;
+}
+
+.accrd-panel-body-cdp.active,
+.accrd-panel-body-sdl.active,
+.accrd-panel-body-sps.active,
+.block-1 .accrd-panel-body.active,
+.inner-risk-body.active {
+    display: block;
+}
+
+.accrd-panel-body-cdp,
+.accrd-panel-body-sdl,
+.accrd-panel-body-sps,
+.block-1 .accrd-panel-body,
+.inner-risk-body,
+.inner-software-mobile {
+    display: none;
+}
+
+.perks-benfits p {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+span.numeric {
+    font-size: 48px !important;
+    color: #cc1212;
+    font-weight: 800 !important;
+    margin-right: 30px;
+    font-family: poppins !important;
+}
+
+.accrd-panel-head.active span.mp-icon {
+    background: #000;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    transform: rotate(45deg);
+}
+
+section.faq-sectn h3 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.faq-sectn.contain-width,
+section.faq-sectn .contain-width {
+    max-width: 980px;
+}
+
+
+.block-1.coloured {
+    background: #fce5e5;
+}
+
+.block-1 {
+    border-bottom: 1px solid #e9e4e4;
+    padding: 20px;
+    background: rgba(252, 229, 229, 0.4);
+}
+
+.block-1 .accrd-panel-head {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.perks-benfits h4 {
+    display: flex;
+
+}
+
+.accrd-title,
+section.bybit-services .dot-img-text h6 {
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: poppins !important;
+
+}
+
+.block-1 .accrd-panel-body.active {
+    display: block;
+}
+
+.perks-benfits p {
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: poppins !important;
+
+}
+
+@media (min-width: 1025px) {
+    .faq-sectn .perks-benfits p {
+        padding-left: 77px
+    }
+
+    span.numeric.n1 {
+        margin-right: 39px
+    }
+}
+
+/* form */
+.bca-clone-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+/* contact us form */
+.form-left-content h3 {
+    font-size: 45px !important;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    font-family: poppins !important;
+}
+
+.form-left-content h5 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+    font-family: poppins !important;
+}
+
+.form-left-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-family: poppins !important;
+}
+
+.form-content-us {
+    padding: 20px 0;
+    display: flex;
+}
+
+.form-mail,
+.form-telegram,
+.form-whatsapp {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.whatsapp-title,
+.telegram-title,
+.mail-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    font-family: poppins !important;
+
+}
+
+a.mail-id,
+a.telegram-id,
+a.whatsapp-id {
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: black;
+    font-family: poppins !important;
+
+}
+
+.form-end-logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 25px;
+
+}
+
+/* rating star */
+.ratings {
+    margin-right: 10px;
+}
+
+.ratings svg {
+    width: 20px;
+}
+
+.ratings svg.rated {
+    fill: #DC2626 !important;
+}
+
+
+
+.opris-exchange .inner-block-build-text span {
+    line-height: 42px;
+}
+
+.nav-tabs .ctsf .nav-link {
+    width: 250px;
+}
+
+/* 
+body.bybit section.bybit-business-benefits p.bybit-title-para {
+    max-width: 780px;
+    margin: 0 auto 40px;
+} */
+
+section.bybit-admin-user-features p.bybit-title-para,
+section.bybit-worflow p.bybit-title-para {
+    max-width: 825px;
+    margin: 0 auto;
+}
+
+section.bybit-types-orders p.bybit-title-para {
+    max-width: 645px;
+    margin: 0 auto;
+}
+
+body.bybit section.bybit-business-benefits .business-benefits-block {
+    display: -webkit-inline-box;
+    min-height: 123px;
+    margin: 15px 0;
+    display: flex;
+    gap: 20px;
+    max-width: 534px;
+}
+
+.business-benefits-block-content h5 {
+    font-size: 22px !important;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.business-benefits-block-content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+body.bybit section.build-on-any-platform .inner-block-build {
+    margin: 20px 0;
+    padding: 20px 0;
+    background: #f8fcff;
+    box-shadow: 8px 8px 16px rgba(255, 149, 149, 0.2);
+    border-radius: 37px;
+    text-align: center;
+}
+
+body.bybit section.build-on-any-platform .inner-block-build .inner-block-build-img {
+    margin-bottom: 20px;
+}
+
+body.bybit section.build-on-any-platform.extended-service .inner-block-build-img img {
+    min-height: 48px;
+}
+
+body.bybit section.build-on-any-platform .inner-block-build h6 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+.dot-img-text {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.bybit-services-row,
+.bybit-types-orders-row {
+    align-items: center;
+}
+
+.multiple-type-ced-img {
+    text-align: center;
+}
+
+.banner-btn ul {
+    display: flex;
+    padding-left: 0;
+}
+
+body.bybit .banner-btn li.nav-item.last-menu:first-child {
+    margin-left: 0px;
+}
+
+/* tab */
+
+
+
+
+.nav-pills.bybit-features-tab .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background: #A80000;
+}
+
+.bybit-nav-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.bybit-features-tab {
+    border: 1px solid #FF0000;
+    background: #FFD7D7;
+    border-radius: 8px;
+}
+
+.bybit-features-item button.bybit-features-link {
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 15px 36px;
+}
+
+section.bybit-admin-user-features .features-content-block.card {
+    text-align: center;
+    min-height: 276px;
+    background: #F8FCFF;
+    margin: 10px;
+    border-radius: 13px;
+    border: 1.5px solid #FEA9A9;
+    padding: 20px 15px;
+    box-shadow: 6.477003574371338px 6.477003574371338px 12.954007148742676px 0px #FF959533;
+}
+
+
+@media (min-width: 992px) {
+    .num-fet-paxful.fixed-cls .bybit-business-benefits-left {
+        position: sticky;
+        top: 0;
+        width: auto;
+    }
+
+
+}
+
+/* section#numerous-feature-id .bybit-business-benefits-left {
+    position: relative;
+}
+
+section#numerous-feature-id.absolute-cls .bybit-business-benefits-left {
+    position: absolute;
+    bottom: 0;
+} */
+
+/* workflow-map */
+.content-block {
+    display: flex;
+    gap: 40px;
+    min-height: 120px;
+    max-width: 500px;
+    
+    max-width: 490px;
+    
+}
+
+
+.content-block.even-content {
+    flex-direction: row-reverse;
+    position: relative;
+    right: -27%;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.content-num span {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: center;
+    border-radius: 50px;
+    background: #FF0000;
+    width: 92px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 12px solid rgb(252 238 238 / 71%);
+}
+
+.even-content .content-text {
+    text-align: right;
+}
+
+.content-block.odd-content {
+    position: relative;
+    left: -10%;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.content-text h6 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.content-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+.workflow-map::before {
+    position: absolute;
+    width: 3px;
+    height: 90%;
+    content: '';
+    background: rgba(0, 0, 0, 1);
+    left: 50%;
+    /* z-index: -1; */
+    top: 64px;
+    margin-left: -3px;
+}
+
+.business-benefits-block-img img {
+    width: 60px;
+}
+
+.business-benefits-block-img {
+    flex: 0 0 60px;
+}
+
+
+
+.workflow-map {
+    position: relative;
+    padding-top: 40px;
+}
+
+.row.even-block {
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+
+body.bybit .resemble-bitstamp-right.bybit-business-benefits-right {
+    padding-left: 70px;
+}
+
+body.bybit .light-pink-img:hover {
+    border: 1px solid rgba(255, 0, 0, 1);
+}
+
+.row.admin-user-features-content {
+    padding-top: 20px;
+}
+
+body.bybit .bybit-features-tab-content .bybit-btn .banner-btn ul {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    margin: 22px;
+}
+
+/* responsive */
+@media (max-width: 1199.98px) {
+    body.bybit li.nav-item.last-menu {
+        margin-left: 20px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-btn ul {
+
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .workflow-map::before {
+        display: none;
+    }
+    
+    body.bybit section.banner h1.head-banner-head-hightlght{margin-bottom:0px;}
+    
+    section.banner .bannerr-right {display: none !important;}
+
+     body.bybit h3.bybit-title, body.bybit h4.bybit-title, body.bybit h5.bybit-title {
+        line-height: 29px !important;
+        font-size: 24px !important;
+    }
+    
+    section.bybit-worflow {
+    margin-top: 0px;
+    padding-top: 0px !important;
+}
+.bybit-sevices-img-right {
+    display: none;
+}
+    
+    section.bybit-types-orders {
+    padding-top: 0px;
+}
+
+    .optimized-bybit-clone-left::before {
+        display: none;
+    }
+
+    .content-block.odd-content {
+        left: 0;
+    }
+
+    .content-block.even-content {
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .content-block {
+        padding-bottom: 10px;
+    }
+
+
+    .content-block.odd-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .even-content .content-text {
+        text-align: left;
+    }
+
+    body.bybit section.bybit-exchange-software,
+    body.bybit section.optimized-bybit-clone,
+    body.bybit section.futuristic-features,
+    body.bybit section.faq-sectn,
+    body.bybit section.index-form-sectn,
+    section.multi-layered-security-features,
+    section.bybit-business-benefits,
+    body.bybit section.build-on-any-platform.wherever-your-users-are,
+    section.bybit-services,
+    section.bybit-worflow,
+    section.bybit-admin-user-features {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .crypto-exchange-right::before {
+        left: 15%;
+    }
+
+    body.bybit section.banner .para-banner p,
+    body.bybit p.bybit-title-para,
+    .features-content-block.card p.bybit-content-para,
+    .futuristic-features-block.inner-block-build.card p.bybit-content-para,
+    body.bybit p.bybit-content-para,
+    .business-benefits-block-content p,
+    .content-text p,
+    body.bybit section.bybit-exchange-software p.bybit-content-para {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    section.futuristic-features .futuristic-features-block.inner-block-build.card {
+        min-height: 270px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body.bybit h4.bybit-title {
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .content-block.odd-content {
+        left: -17%;
+    }
+
+    .content-block.even-content {
+        right: -16%;
+    }
+
+    .crypto-exchange-right::before {
+        left: 7%;
+    }
+
+    .banner-btn ul {
+        justify-content: center;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 991.98px) {
+
+    .multiple-type-ced-img,
+    .bybit-business-benefits-left,
+    .optimized-bybit-clone-left,
+    body.bybit-clone-script .crypto-success-ess-img,
+    .bybit-sevices-img-right {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    ul#pills-tab li,
+    ul#pills-tab li button {
+        width: 100%;
+    }
+
+    /* body.bybit .proc-dev:last-child {
+        height: auto;
+        min-height: 100%;
+    } */
+
+    section.bybit-worflow {
+        margin-top: 26px;
+    }
+
+    body.bybit section.bybit-business-benefits .business-benefits-block,
+    body.bybit section.banner .para-banner p {
+        max-width: 100%;
+    }
+
+    body.bybit .resemble-bitstamp-right.bybit-business-benefits-right {
+        padding-left: 15px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .content-block.even-content {
+        right: -12%;
+    }
+
+    .content-block.odd-content {
+        left: -60px;
+    }
+
+    .bybit-types-orders-row {
+        padding: 30px 0;
+    }
+
+    .crypto-exchange-right::before {
+        left: 10%;
+    }
+}

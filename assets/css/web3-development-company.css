@@ -1,0 +1,308 @@
+@import url('./root.css');
+
+
+h2,
+section.faq h3 {
+    font-size: var(--font-36);
+    font-weight: var(--weight-600);
+    margin-bottom: var(--mar-40px);
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: var(--weight-600);
+    letter-spacing: 0.01em;
+}
+
+
+.demo-btn {
+    margin-top: 60px;
+}
+
+.top-space {
+    margin-top: 60px;
+}
+
+.head-text {
+    text-align: var(--center) !important;
+    margin-bottom: 50px;
+}
+
+.hire-blockchian-game-left,
+.web3-platform-right {
+    text-align: var(--center);
+}
+
+section.web3-platform .row,
+section.hire-web3-developers .row,
+section.Top-web3-development .row,
+section.web3-development .row {
+    align-items: var(--align-c);
+}
+
+section.web3-development,
+section.Top-web3-development,section.about-web3 {
+    overflow-x: hidden;
+}
+
+section.banner-part {
+    padding: 200px 0 160px;
+    position: var(--position-rel);
+    background-image: url(../../assets/Image/web3-development-company/webp/banner-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: var(--white-text);
+}
+
+section.banner-part h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+section.about-web3 {
+    padding: 80px 0 40px;
+}
+
+section.web3-development,
+section.development-services,
+section.processs-web3,
+section.benefits-web3 {
+    padding: 40px 0;
+}
+
+section.pioneering-development {
+    padding-bottom: 40px;
+}
+
+section.web3-platform,
+section.first-class-web3,
+section.hire-web3-developers,
+section.Top-web3-development {
+    margin: 40px 0;
+}
+
+
+.web3-development-left img {
+    width: 100%;
+}
+
+section.web3-platform {
+    background: var(--linear-bg);
+    color: var(--white-text);
+}
+
+section.development-services h2 {
+    text-align: var(--center);
+}
+
+section.development-services .row {
+    justify-content: center;
+}
+
+.services-box {
+    background: linear-gradient(142.02deg, #C4D3E9 2.22%, #FFCECE 98.96%);
+    padding: 20px 15px;
+    text-align: var(--center);
+    height: 100%;
+    border-radius: var(--radius-8px);
+}
+
+.processs-card h3,
+.services-box h3,
+.solutions-card-head h3 {
+    color: var(--red-text) !important;
+}
+
+.services-box h3 {
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+.services-icon {
+    margin-bottom: 10px;
+    margin-top: -50px;
+}
+
+section.first-class-web3 {
+    background-image: url(../../assets/Image/web3-development-company/webp/first-class-platform-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white-text);
+
+}
+
+.first-class-web3-content {
+    padding: 140px 60px 140px 0;
+}
+
+section.first-class-web3 p {
+    letter-spacing: 0.01em;
+}
+
+.pioneering-development-right .solutions-card:first-child {
+    margin-top: 90px;
+}
+
+.pioneering-development-img img {
+    width: 100%;
+}
+
+.solutions-card {
+    height: 90%;
+    border-radius: var(--radius-16px);
+    box-shadow: 0px 31.5px 49px 0px #F469684D;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: var(--white-bg);
+}
+
+.solutions-card-head {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 12px;
+    align-items: var(--align-c);
+}
+
+.pioneering-development-left {
+    padding-right: 60px;
+    position: sticky;
+    top: 0;
+    padding-top: 90px;
+}
+
+.processs-card {
+    box-shadow: 0px 31.5px 49px 0px #F469684D;
+    padding: 30px;
+    min-height: 450px;
+    margin-bottom: var(--mar-30px);
+    border-radius: var(--radius-16px);
+    background-color: var(--white-bg);
+    text-align: var(--center);
+}
+
+.process-icon,
+.processs-card h3 {
+    padding-bottom: var(--pad-20px);
+}
+
+section.processs-web3 .head-text p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+section.benefits-web3 .head-text p {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.benefits-card {
+    /*border-bottom: 1px solid #8B6FEE80;*/
+    /*box-shadow: 0px 5px 0px 0px #8B6FEE;*/
+    /*background: #B60202;*/
+    /*color: var(--white-text);*/
+        box-shadow: 0px 31.5px 49px 0px #F469684D;
+        background-color: var(--white-bg);
+    text-align: var(--center);
+    padding: var(--pad-20px);
+    height: 90%;
+    margin-bottom: var(--mar-20px);
+    border-radius: var(--radius-10px);
+}
+
+.benefit-icon {
+    margin-bottom: 15px;
+}
+
+.row.benefits-web3-content {
+    padding: 0 40px;
+}
+
+section.hire-web3-developers {
+    padding: 50px 0 30px;
+}
+
+section.hire-web3-developers p,
+section.Top-web3-development p {
+    text-align: var(--text-alignjus);
+}
+
+section.Top-web3-development {
+    padding: 50px 0;
+    background: var(--linear-bg);
+    color: var(--white-text);
+}
+
+section.Top-web3-development h2 {
+    padding-right: 30px;
+}
+
+section.faq h3 {
+    text-align: var(--center) !important;
+}
+
+
+section.faq .faq-qn .accrd-panel-head {
+    display: var(--flex);
+    align-items: baseline;
+    justify-content: var(--justi-sb);
+    gap: var(--gap-15);
+}
+
+
+.perks-benfits {
+    display: var(--flex);
+    flex-direction: column;
+    gap: var(--gap-25);
+}
+
+.accrd-panel-head h4.accrd-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.36px;
+    letter-spacing: 0.01em;
+    text-align: var(--center);
+    margin-bottom: 0;
+}
+
+.accrd-panel-body.active {
+    padding-top: 20px;
+}
+
+.block-1 {
+    background: #FFEEF6;
+    border-radius: var(--radius-12px);
+    background: #FFEEF6;
+    padding: 20px 50px;
+}
+
+.faq-qn ul li {
+    list-style: circle;
+}
+
+section.faq .faq-qn span.mp-icon {
+    height: 30px;
+    width: 30px;
+    text-align: var(--center);
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #000;
+    font-size: 24px;
+}
+
+section.faq .faq-qn .accrd-panel-head.active span.mp-icon {
+    transition: 0.4s ease-in-out;
+    transform: rotate(45deg);
+}
+
+section.faq {
+    margin-top: 80px;
+    padding-top: 100px;
+}

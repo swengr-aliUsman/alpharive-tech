@@ -1,0 +1,1401 @@
+@import url('./root.css');
+h3{
+    font-weight:700;
+}
+p.top-text span{
+    color:var(--para-clr);
+}
+.section-top-pt{
+    padding-top:80px;
+}
+.section-top-mt{
+    margin-top:80px;
+}
+section.various-crypto h3{
+    font-size: 35px !important;
+    margin: 0 auto var(--mar-30px);
+    color:#fff !important;
+    line-height: 1.4;
+}
+.exchange .best {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #fd1716;
+}
+.exchange .success {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: #fd1716;
+    text-decoration: underline;
+    width: fit-content;
+    padding-bottom: 7px;
+}
+/* home page css start */
+section.what-we-do{
+    padding-top: 75px;
+    background: #fde7e5;
+    padding-bottom: 75px;
+}
+.crypto-exchg-development section.exchange{
+    /*height:100vh;*/
+        padding-top: 100px !important;
+        padding-bottom: 30px;
+}
+section.header-sctn.header-new {
+    position: fixed;
+    width: 100%;
+}
+section.exchange .contain-width{
+    height:100%;
+    display:flex;
+    align-items:center;
+}
+section.exchange h1 {
+    font-weight: 600;
+    font-size: 48px;
+}
+section.exchange .rght-cnt p{
+    font-size: 17px !important;
+}
+.explore-btn{
+    margin-top:40px;
+}
+
+section.what-we-do p{
+    font-size: 16px;
+}
+section.what-we-do h2 {
+    font-size: var(--font-42);
+    /* max-width: 600px; */
+    margin: 13px 0;
+}
+.review-box span {
+    font-size: 13px;
+}
+.easy-use ul {
+    padding-left: 0;
+    margin-top: var(--mar-25px);
+}
+.easy-use ul li {
+    display: var(--flex);
+    /*align-items: var(--align-c);*/
+    gap: var(--gap-15);
+    font-size: var(--font-15);
+    font-weight:var(--weight-600);
+    padding-bottom: var(--pad-15px);
+    text-align: var(--left);
+   
+}
+.cta-crypto-content p{
+    font-size: 30px !important;
+    margin-bottom: 0;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.digital-transformation .easy-use ul li{
+    width: 45%;
+}
+.arrow-one i {
+    font-size: var(--font-9);
+    color: #fff;
+    border-radius: var(--radius-50px);
+    padding: 4px;
+    background: linear-gradient(47.82deg, #FF1717 0%, #FF6461 100%);
+}
+
+
+section.award {
+
+    text-transform: uppercase;
+}
+.awards-logo {
+    display: var(--flex);
+    justify-content: var(--justi-c);
+    gap: 100px;
+}
+.award-box {
+    box-shadow: 0px 31.5px 49px 0px rgba(244, 105, 104, 0.3);
+    background: rgba(255, 255, 255, 1);
+    padding: 11px 29px;
+    border-radius: 16px;
+    height: 140px;
+    display: var(--flex);
+    align-items: var(--align-c);
+    width: 200px;
+    justify-content: var(--justi-c);
+}
+.award-box:hover{
+    box-shadow: rgba(244, 105, 104, 0.3) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+section.development-cost {
+    padding-top: var(--section-top);
+}
+section.development-cost h2 {
+    text-align: var(--center);
+    /*max-width: 550px;*/
+    /*margin: 0 auto 14px;*/
+    margin-bottom:20px;
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+}
+ section h2 span {
+    color: var(--para-clr);
+    font-size: var(--font-42);
+}
+section.development-cost p {
+    font-size: var(--font-15);
+    text-align: var(--center);
+    max-width: 550px;
+    margin: 0 auto 40px;
+}
+.scratch-content p {
+    text-align: left !important;
+    margin: 0 !important;
+}
+.scratch-content h3 span {
+    color: var(--para-clr);
+    font-size: 21px;
+}
+.scratch-content h3 {
+    font-size: 21px;
+    font-weight: var(--weight-600);
+    margin: 12px 0;
+}
+/*section.crypto-developer .row ,*/
+section.development-cost .row{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+section.platform-exchange {
+    padding-top: 75px;
+}
+section.platform-exchange h2{
+    font-size: var(--font-42);
+    text-align: var(--center);
+    max-width: 800px;
+    margin: 200px auto 40px;
+}
+section.platform-exchange p {
+    text-align: center;
+    max-width: 1186px;
+    margin: 0 auto 30px;
+ 
+}
+.map-img {
+    text-align: var(--center);
+}
+section.crypto-developer h2 {
+    font-size: var(--font-42);
+    text-align: var(--center);
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-weight: var(--weight-600);
+}
+.exchnage-develpoment .experts a {
+    padding: 10px 29px;
+}
+.developer-detail{
+    /*background: #141414;*/
+    background: linear-gradient(91.08deg, #000 0, #012442 93.42%);
+    padding: 32px 42px;
+    color: var(--white-text);
+    border-radius:var(--radius-15px);
+}
+.developer-detail p{
+    font-size: 16px;
+}
+/* .experts a{
+    background: rgba(40, 40, 43, 1);
+    border: 1px solid var(--para-clr);
+    border-radius: 5px;
+    color: var(--white-text);
+    padding: 7px 9px ;
+    transition: transform 300ms ease, box-shadow 300ms ease, background-color 300ms ease, -webkit-transform 300ms ease !important;
+}
+.experts a:hover{
+    transform: translate(0px, -2px);
+} */
+
+.experts a {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    padding: 10px 35px;
+    border: 0px solid !important;
+    border-color: transparent !important;
+    font-size: 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    box-shadow: 0 0 0 2px #fe5855;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+    background: rgba(40, 40, 43, 1);
+}
+.experts a:hover{
+    box-shadow: 0 0 0 12px transparent;
+    color: #fff;
+    border-radius: 12px;
+}
+.experts a::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #fe5855;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.experts a:hover:before {
+    width: 420px;
+    height: 420px;
+    opacity: 1;
+}
+
+.experts {
+    margin-top: var(--mar-35px);
+}
+.side-img img{
+    height: 427px;
+}
+section.cts-box {
+    margin-top: 120px;
+}
+section.cts-box h2 {
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+    line-height: 44px;
+}
+.cta-box-bg {
+    background-image: url(../images/landing/cta-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: var(--linear-bg);
+    padding: 30px 40px ;
+    color: var(--white-text) !important;
+    border-radius: 20px;
+}
+.cts-box-img{
+    margin-top:-120px;
+}
+section.cts-box p {
+    margin: 30px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+section.cts-box .experts a {
+    padding: 9px 26px;
+    font-size: var(--font-18);
+}
+section.first-class {
+    margin: 75px 0;
+    padding: 70px 0;
+    height: 400px;
+background: linear-gradient(91.08deg, #000 0, #012442 93.42%);
+}
+section.first-class h2 {
+    font-size:var(--font-42);
+    text-align: var(--center);
+    max-width: 720px;
+    margin: 0 auto 45px;
+    font-weight: var(--weight-700);
+    color: var(--white-text);
+}
+.first-class-box {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 38.24px 35.99px 0px rgba(163, 163, 240, 0.12);
+    padding: 55px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+.first-class-box p{
+    font-size: var(--font-15);
+}
+section.build-crypto {
+    padding-top: var(--section-top);
+}
+section.build-crypto .row{
+    justify-content:var(--center);
+}
+section.build-crypto h2 ,.digital-transformation h2{
+    text-align: center;
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+}
+section.build-crypto h2 span {
+    color: var(--para-clr);
+    font-size: var(--font-42);
+}
+section.build-crypto p {
+    font-size: 16px;
+    max-width: 660px;
+    text-align: var(--center);
+    margin: 23px auto;
+}
+.crypto-box p {
+    font-size: var(--font-15) !important;
+    /*max-width: 290px !important;*/
+}
+.crypto-box {
+    text-align: var(--center);
+    background: rgb(255 100 97 / 38%);
+    padding: 25px;
+    border-radius: 8px;
+    position: var(--position-rel);
+    height: 100%;
+}
+.crypto-box:hover {
+    transform: translateY(-12px);
+    transition: all .3s ease;
+}
+.crypto-box h3 {
+    font-size: var(--font-16);
+    font-weight: 700;
+    margin: clamp(15px,5vw,25px) 0;
+}
+.crypto-icon {
+/*margin-top: -52px;*/
+}
+.build-crypto-box {
+    margin-top: 75px;
+}
+.bottom-space {
+    margin-bottom: 75px;
+}
+section.white-label-sctn {
+    padding-top: var(--section-top);
+}
+section.white-label-sctn h2 {
+    font-size:var(--font-42);
+    font-weight: var(--weight-600);
+    text-align: var(--center);
+    margin: 0 auto 20px;
+}
+.development-cta {
+    box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.06);
+    background: rgba(248, 249, 252, 1);
+    padding: var(--pad-50px);
+    border-radius: 23px;
+    position: var(--position-rel);
+}
+.development-cta p{
+    font-size: var(--font-15);
+}
+.white-label-img {
+    position: var(--position-abs);
+    top: -40px;
+}
+.revenue-modules h2 {
+    font-size: var(--font-42) !important;
+    max-width: 555px !important;
+}
+.revenue-modules {
+    margin-top: 75px !important;
+}
+.white-label-box {
+    background: rgba(255, 237, 237, 1);
+    padding: 50px;
+    border-radius: 11px;
+}
+.development-cnt-box .crypto-box .crypto-icon {
+   margin-top:0;
+}
+.development-cnt-box .crypto-box p {
+    margin: 25px auto;
+}
+.development-cnt-box {
+    margin-top: -50px;
+    padding: 0 50px;
+}
+.development-cnt-box .crypto-box {
+    height: 93%;
+}
+.development-cnt-box .crypto-box:hover{
+    border:1px solid var(--para-clr);
+}
+section.pre-built h2 {
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+    text-align: var(--center);
+}
+section.pre-built h2 span{
+    color: var(--para-clr);
+    font-size: var(--font-42);
+}
+section.pre-built{
+    padding-top: var(--section-top);
+    overflow: hidden;
+}
+.clone-script-pages {
+    display: var(--flex);
+    align-items: baseline;
+    gap: 10px;
+    padding: 10px 26px;
+    border-radius: 75px;
+}
+.clone-script-pages a {
+    color: #000;
+    font-size: var(--font-15);
+    font-weight: var(--weight-600);
+}
+.exchnage-develpoment {
+    position: sticky;
+    top: 97px;
+    /*margin-bottom: 214px;*/
+    margin-bottom: 50px;
+    background: #fff;
+    height:100%;
+}
+section.development-services .exchnage-develpoment:nth-child{
+    /*margin-bottom:200px !important;*/
+    top:0;
+}
+.development-services .demo-btn{
+    margin-top:20px;
+    text-align:center;
+}
+section.development-services a{
+    color:#000;
+}
+.swiper-part {
+    display: flex;
+    white-space: nowrap;
+    gap: 15px;
+    animation: 50s slides infinite linear;
+    margin:40px 0;
+}
+.swiper-part-two{
+        display: flex;
+    white-space: nowrap;
+    gap: 15px;
+    margin: 40px 0;
+       animation: 30s slideright infinite linear;
+}
+@keyframes slideright {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(10%);
+        }
+    }
+@keyframes slides{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.swiper-part:hover {
+    animation-play-state: paused;
+}
+.clone-script-pages:nth-child(odd){
+    background: rgba(249, 239, 255, 1);
+}
+.clone-script-pages:nth-child(even){
+    background: rgba(239, 244, 255, 1);
+
+}
+.clone-development{
+    max-width: 750px;
+    margin: 70px auto 0;
+    padding: 0 15px;
+}
+.clone-development h2{
+    text-align: left !important;
+    margin: 0 0 20px;
+}
+.clone-development .experts {
+    margin-bottom: var(--mar-25px);
+}
+.clone-development .experts a {
+    padding: 9px 14px;
+}
+section.faq {padding-top: var(--section-top);}
+section.faq h3 {
+    font-size: var(--font-35);
+    font-weight: var(--weight-600);
+    text-align: var(--center);
+}
+.perks-benfits p{
+     font-size: var(--font-15) !important;
+     font-weight: var(--weight-400) !important;
+         text-align: left !important;
+}
+.accrd-panel-head.active span.mp-icon {
+    transition: 0.4s ease-in-out;
+    transform: rotate(45deg);
+}
+span.mp-icon {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--para-clr);
+    font-size: var(--font-15);
+    background: rgba(255, 69, 57, 0.07);
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.accrd-panel-head {
+    display: var(--flex);
+    align-items: baseline;
+    justify-content: var(--justi-sb);
+    gap: var(--gap-15);
+}
+section.faq h4 {
+    font-size: var(--font-15);
+    font-weight: var(--weight-600);
+}
+.qn-faq{
+    margin-top: var(--mar-35px);
+}
+.block-1 {
+    box-shadow: 0px 11.25px 18.75px -7.5px rgba(20, 23, 24, 0.05);
+    padding: 15px 20px;
+    margin-bottom: var(--mar-15px);
+    border-radius: var(--radius-10px);
+}
+.block-1 ul {
+    padding-left: var(--pad-15px);
+}
+.block-1 ul li {
+    padding-bottom: var(--pad-15px);
+    list-style: disc;
+}
+ .key-features.revenue-modules .head-text h2 {
+    max-width: 950px !important;
+}
+section.development-services {
+    padding-top: var(--section-top);
+}
+section.development-services h2 {
+    text-align: var(--center);
+    margin: 0 auto 20px;
+}
+    section.development-services.how-develop-crypto h2{
+    margin: 0 auto 40px;   
+}
+
+section.development-services p {
+}
+section.outstanding-features .head-text,.white-label-sctn .head-text{
+    max-width: 100% !important;
+}
+.features-arrow i{
+    font-size: 16px;
+    color: #FF1717;
+    padding: 2px;
+    border: 2px solid #FF1717;
+    border-radius: 4px;
+}
+section.outstanding-features h2 {
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+    margin-bottom: 20px;
+}
+section.white-label-sctn .head-text p{
+    max-width: 780px;
+    margin: 0 auto;
+}
+section.outstanding-features .head-text p{
+    max-width: 890px;
+    margin: 0 auto;
+}
+section.outstanding-features{
+margin-top: var(--section-top);
+}
+.bottom-space:last-child{
+    /*margin-bottom:0 !important;*/
+}
+.features ul.nav.nav-tabs {
+    border-bottom: var(--none);
+    background: rgba(247, 247, 247, 1);
+    box-shadow: 0px 3.75px 15px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    width: 680px;
+    border-radius: 9px;
+}
+.features button.nav-link.active {
+    background: #000;
+    color: var(--white-text);
+    border-radius: 8px !important;
+    border: 2px solid var(--para-clr) !important;
+}
+.features button.nav-link {
+    padding: 6px 21px;
+    color: #000;
+}
+.features button.nav-link:focus{
+   border: 0;
+}
+.features-tab-cnt {
+    background: rgba(248, 249, 252, 1);
+    padding: 25px 50px 0;
+    margin-top: 30px;
+    border-radius: 25px;
+    width: 680px;
+    border: 1px solid var(--para-clr);
+}
+.features-tab-cnt h3 {
+    font-size: var(--font-20);
+    font-weight: var(--weight-600);
+    color: #B01817;
+}
+.outstanding-feature-tab-box {
+    /* margin-bottom: 70px; */
+    background: rgb(255 217 217);
+    height: 515px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.outstanding-img img{
+    width:100%;
+}
+.features-tab-cnt .easy-use ul {
+    margin-top: var(--mar-10px);
+}
+section.how-does-work {
+    padding-top: var(--section-top);
+}
+section.how-does-work h2 {
+    text-align: var(--center);
+    font-size: var(--font-42);
+    font-weight: var(--weight-600);
+}
+section.how-does-work h2 span{
+    color: var(--para-clr);
+    font-size: var(--font-42);
+}
+.acctn-create-box, .even-steps {
+    display: flex;
+    align-items: center;
+    background: rgba(244, 105, 104, 0.07);
+    padding: 25px;
+    border-radius: 8px;
+    position: var(--position-rel);
+    justify-content: space-between !important;
+}
+.acctn-create-box h3, .even-steps h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: var(--weight-600);
+    color: var(--para-clr);
+}
+.acctn-create-box p, .even-steps p {
+    margin-bottom: 0;
+    font-size: var(--font-15);
+}
+.step-head-img {
+    position: var(--position-abs);
+    right: -50px;
+    top: 3px;
+}
+.acctn-create-box.box-three {
+    margin-top: 100px;
+    max-width: 457px;
+}
+.acctn-create-box.box-five {
+    margin-top: 70px;
+    max-width: 431px;
+}
+.acctn-create-box.box-seven {
+    margin-top: 70px;
+    max-width: 434px;
+}
+.acctn-create-box.box-one {
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.steps-work{
+    margin-top: 45px;
+}
+.no-step {
+    position: var(--position-rel);
+}
+.no-step:after {
+    position: var(--position-abs);
+    width: 70%;
+    height: 100%;
+    top: 17px;
+    background-image: url(../images/landing/road-map.svg);
+    background-repeat: no-repeat;
+    content: '';
+    left: 35rem;
+    background-position-x: left;
+    background-size: contain;
+}
+.even-steps .step-head-img {
+    left: -62px;
+}
+.even-steps .step-head {
+    padding: 0 25px;
+}
+.even-steps:first-child {
+    width: 450px;
+    margin-top: 75px;
+}
+.even-steps.box-four {
+    margin-top: 150px;
+}
+.even-steps.box-six {
+    margin-top: 150px;
+    max-width: 496px;
+}
+section.business-benefits {
+    padding-top: var(--section-top);
+}
+section.business-benefits h2 {
+    font-size: var(--font-42);
+    text-align: var(--center);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+section.business-benefits h2 span {
+    color: var(--para-clr);
+    font-size: var(--font-42);
+}
+@keyframes waveAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .waves svg path {
+    animation: waveAnimation 3s ease-in-out infinite;
+  }
+  
+  .waves svg path:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .waves svg path:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .waves svg path:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  
+  .waves svg path:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  
+  .waves svg path:nth-child(6) {
+    animation-delay: 1s;
+  }
+  
+  .waves svg path:nth-child(7) {
+    animation-delay: 1.2s;
+  }
+  
+  .waves svg path:nth-child(8) {
+    animation-delay: 1.4s;
+  }
+  
+  .waves svg path:nth-child(9) {
+    animation-delay: 1.6s;
+  }
+  
+  .waves svg path:nth-child(10) {
+    animation-delay: 1.8s;
+  }
+  
+  .waves svg path:nth-child(11) {
+    animation-delay: 2s;
+  }
+  
+  .waves svg path:nth-child(12) {
+    animation-delay: 2.2s;
+  }
+  
+  .waves svg path:nth-child(13) {
+    animation-delay: 2.4s;
+  }
+  
+  .waves svg path:nth-child(14) {
+    animation-delay: 2.6s;
+  }
+  .benefits-steps {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    color: var(--para-clr);
+    font-size: 18px;
+    font-weight: 600;
+    background: rgba(244, 105, 104, 0.07);
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+}
+.benefits-steps p {
+    margin-bottom: 0;
+}
+.benefits-steps:nth-child(2) {
+    margin-top: 90px;
+}
+.benefits-steps:nth-child(1) {
+    margin: 75px;
+}
+.benefits-steps:nth-child(3) {
+    margin: 85px 10px;
+}
+.benefits-steps:nth-child(4) {
+    margin: 95px 18px;
+}
+.benefits-steps.benfit-left:nth-child(1) {
+    margin: 75px -60px;
+}
+.benefits-steps.benfit-left:nth-child(4){
+    margin: 95px -50px;
+}
+.waves{
+    position: var(--position-rel);
+    left: 50px;
+}
+.waves:after {
+    position: var(--position-abs);
+    content: '';
+    width: 910px;
+    height: 100%;
+    top: 31px;
+    left: -64px;
+    background-image: url(../images/landing/bussiness-img.webp);
+    background-repeat: no-repeat;
+}
+section.development-services h3,h3 a.development-service-link {
+    font-size: 22px !important;
+    font-weight: 700;
+    position:relative;
+}
+section.development-services h3 a:hover{
+    text-decoration:underline;
+}
+a.development-services-link i{
+    font-size:22px !important;
+        margin: 2px;
+    transform: translateX(0);
+    transition: .3s;
+}
+a.development-services-link:hover i{
+    transform: translateX(10px)
+}
+
+/*section.development-services h3 a:hover:before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    background: url(../images/right-arw.svg) no-repeat center;*/
+/*   width: 25px;*/
+/*    height: 25px;*/
+/*    right: -36px;*/
+/*    top: 6px;*/
+/*    background-size: 24px;*/
+/*}*/
+.development-services-content p{
+    text-align: left !important;
+    margin: 12px 0 !important;
+    width: 70%;
+}
+.centre-exchange {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 7.5px 39.74px 0px rgba(14, 7, 41, 0.1);
+    border-radius: 15px;
+    padding: 40px 30px;
+}
+.padd-left{
+    padding-left: 0 !important;
+}
+.services-img img {
+    border-radius: 0 15px 15px 0 ;
+    width:100%;
+     height: 417px;
+}
+.development-cnt-box .row {
+    justify-content: center;
+}
+/* home page css end */
+section.clent-review,section.business-benefits,section.how-does-work,section.crypto-developer {
+    overflow:hidden;
+}
+.what-we-do-img{
+    text-align:center;
+    position: relative;
+    left: -25px;
+}
+
+
+
+/* update*/
+.left-step{
+    float: right;
+}
+
+.even-steps.box-four.aos-init.aos-animate {
+    float: right;
+}
+
+.even-steps.aos-init.aos-animate {
+    float: right;
+}
+.rght-cnt h1 {
+    font-weight: 600;
+    margin: 0 0 25px;
+}
+.demo-btn {
+    margin-top: 30px;
+}
+/* update*/
+/* cryptocurrency updates*/
+.centre-exchange {
+    box-shadow:none !important;
+}
+.centre-exchange.ex-odd {
+    background: rgb(244 105 104 / 30%);
+    height: 232px;
+}
+
+.head-text {
+    max-width: 980px;
+    margin:0 auto 40px;
+    text-align: center;
+}
+.features ul.nav.nav-tabs, .features-tab-cnt{
+    width:100% !important;
+    justify-content:space-around;
+}
+.features .nav-tabs .nav-link:focus, .features .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+/* cryptocurrency updates*/
+
+
+
+/*/ Cryptocurrency Exchange Development Company cta  /*/
+section.cta-crypto {
+    margin-top: var(--section-top);
+    padding-top: 60px;
+}
+.cta-crypto .bg{
+    background: linear-gradient(259deg, #012442 0%, #000 100%);
+    color: #fff;
+    position: relative;
+    padding: 60px 0;
+}
+.cta-crypto img{
+    position: absolute;
+    bottom: 0;
+}
+.cta-crypto h4{
+      font-weight: 600;
+    font-size: 35px !important;
+    margin-bottom: 20px;
+}
+.cta-crypto .demo-btn a{
+    font-weight: 600;
+    font-size: var(--font-18);
+    padding: 9px 26px;
+}
+
+.cta-crypto .learn-btn{
+    box-shadow: 0 20px 22px 0 rgba(0, 0, 0, 0.2);
+background: #fff !important;
+color: #000 !important;
+}
+
+
+/*pre-built-new */
+section.pre-built-new ,section.what-we-do{
+    margin-top: var(--section-top);
+}
+.pre-built-new h2{
+    font-weight: 600;
+font-size: 35px;
+letter-spacing: 0.01em;
+    color: #000;
+    text-align: center;
+}
+.pre-built-new h2 span{
+    background: linear-gradient(7deg, #ff1717 0%, #ff6461 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pre-built-new .box:hover{
+        transform: scale(1);
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border:unset !important;
+    cursor:defalut;
+}
+.pre-built-new .box{
+    box-shadow: 3px 4px 7px 0 rgba(0, 0, 0, 0.34);
+background: #fff;
+border: 1px solid #ff1717;
+border-radius: 5px;
+padding: 15px 20px 20px;
+text-align: center;
+margin-bottom: 24px;
+transition: all 200ms ease-in-out;
+}
+.pre-built-new .box h3{
+    font-weight: 600;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #000;
+}
+.pre-built-new .box p{
+    font-weight: 400;
+font-size: 14px;
+color: #000;
+}
+
+section.what-we-do .easy-use {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top:clamp(10px,5vw,30px);
+}
+section.what-we-do .easy-use ul{
+    margin:0;
+}
+section.development-services.business-benefits h2{
+    margin-bottom:60px;
+}
+.bottom-space {
+    margin-bottom: 80px;
+}
+.services-box {
+    padding: 30px;
+    border-radius: var(--radius-16px);
+    position: var(--position-rel);
+    height: 100%;
+    box-shadow: 0 31px 49px 0 rgba(244, 105, 104, 0.3);
+    background: #fff;
+}
+.services-box.bg-grey {
+    background: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: none;
+    text-align: center;
+}
+
+.services-box h3 {
+    min-height: 45px;
+} 
+
+body.crypto-exchange-page section.revenue-modules.crypto-software-demo .owl-item {
+    height: auto !important;
+}
+.crypto-software-demo h2{
+    max-width:100% !important;
+}
+section.cts-box .easy-use{
+        display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+section.how-develop-crypto .services-box p{
+    text-align:left !important;
+}
+.smart-choice-right::-webkit-scrollbar {
+    width: 4px;
+}
+.smart-choice-right::-webkit-scrollbar-thumb {
+    background: var(--para-clr);
+}
+.smart-choice-right::-webkit-scrollbar-track {
+    background: #888;
+}
+.choice-business p{
+    margin-bottom:0 !important;
+}
+.choice-business {
+    display: flex;
+    gap: 15px;
+    margin-bottom:clamp(10px,5vw,20px);
+    align-items: center;
+    padding: 10px;
+}
+.how-does-work h2{
+    margin-bottom:20px;
+}
+.smart-choice-left h2{
+    margin-bottom:clamp(20px,5vw,30px);
+}
+.smart-choice-right {
+    height: 550px;
+    overflow-y: hidden;
+}
+.smart-choice-right:hover{
+    overflow-y:auto !important;
+    cursor:pointer;
+}
+section.crypto-script{
+    padding:80px 0 !important;
+}
+section.digital-transformation{
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+section.digital-transformation  .carousel-inner {
+    box-shadow: 0px 27px 42px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 30px;
+    max-width: 85%;
+    margin: 0 auto;
+    min-height: 380px;
+
+}
+section.digital-transformation  .carousel-inner h3{
+    text-align: center;
+    font-size: 28px !important;
+    /* max-width: 454px; */
+    margin: 0 auto 20px;
+}
+.carousel-inner .easy-use ul{
+    gap: 0 70px;
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 10; 
+    background: none; 
+    border: none;
+}
+
+.carousel-control-prev {
+    left: -50px; 
+}
+.carousel-control-next {
+    right: -50px; 
+}
+
+
+
+section.development-process .head-text h2 {
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+.process-card{
+    border: 1px solid  #FD1716;
+    background: #FD17161A;
+    border-radius:16px;
+    padding: 20px 15px;
+    position: relative;
+    height:82%;
+}
+.process-card h3{
+    margin:15px 0 20px;
+}
+.top-space{
+    margin-top:50px;
+}
+.process-card-top{
+    position: absolute;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #070707;
+    border: 1px solid  #FD1716;
+    border-radius:50%;
+    padding: 10px;
+    width: 75px;
+    height: 75px;
+    right: 7%;
+    top: -45px;
+    text-align: center;
+    z-index: 1;
+    background: #fff;
+}
+section.various-crypto {
+    background: linear-gradient(267.67deg, #012442 1.52%, #000000 155.37%);
+padding:80px 0;
+    margin-top: 80px;
+}
+.strong-benefit-box,
+.strong-benefit-box .strong-benefit-img{
+        transition: .2s ease-in-out;
+            -webkit-transition: .2s ease-in-out;
+}
+.strong-benefit-box:hover .strong-benefit-img{
+    transform: scale(1.1)
+}
+.strong-benefit-box p {
+    font-weight: 600 !important;
+    color:#fff;
+  }
+  .strong-benefits-blocks {
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      gap: clamp(15px, 5vw, 50px);
+      max-width: 990px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+  }
+  .strong-benefit-img {
+    margin-bottom: clamp(10px, 5vw, 25px);
+  }
+ .head-text p.top-text ,.smart-choice-left p.top-text,.crypto-exchange-company  p.top-text{
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    font-size: 30px !important;
+    margin-bottom: 0;
+    
+}
+
+.key-features .item{
+        position: relative;
+    border: 1px solid #ff1717;
+    border-radius: 5px;
+    box-shadow: 3px 4px 7px 0 rgba(0, 0, 0, 0.34);
+        width: 100%;
+    border-radius: 14.996px;
+    background: #F8F9FC;
+    padding: 15px 20px !important;
+    justify-content: flex-start;
+    /*margin-top:40px;*/
+    align-items: unset;
+}
+section.key-features  .img-box {
+    border: 1px solid #fd1716;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.15);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 30px;
+}
+section.key-features .owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.38) !important;
+}
+
+section.key-features .owl-nav button:focus {
+    outline: none;
+}
+section.revenue-modules.key-features .contain-width .owl-height{
+      overflow: hidden;
+          padding-top: 30px;
+    padding-bottom: 30px;
+}
+section.revenue-modules.key-features .contain-width {
+    overflow: visible;
+    padding: 25px 10px !important;
+}
+section.revenue-modules.key-features .owl-nav button.owl-prev {
+    left: unset;
+    right: 70px;
+    top: unset;
+    bottom: -10px;
+}
+section.revenue-modules.key-features .owl-nav button.owl-next {
+    left: unset;
+    right: 25px;
+    top: unset;
+    bottom: -10px;
+}
+section.revenue-modules.key-features .item h3{
+    min-height:auto !important;
+    margin-bottom:15px;
+}
+section.revenue-modules.key-features .item h3,
+section.revenue-modules.key-features .item p{
+    text-align:left !important;
+}
+.ai-power-exchange h2{
+    margin-bottom: 20px;
+}
+section.exchange .easy-use ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+section.exchange  .easy-use ul li {
+    align-items: baseline;
+    padding-bottom: 0;
+    width: 46%;
+}
+.block-feature{
+    padding: 15px;
+    display:flex;
+    align-items: var(--align-c);
+    gap: 10px;
+    margin-bottom:clamp(10px,5vw,25px);
+    background:#F9EFFF;
+    border-radius:5px;
+}
+.block-feature p{
+    font-size:18px !important;
+    line-height:1.3; 
+    margin-bottom:0 !important;
+     font-weight: 600 !important;
+}
+.development-services-content {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.development-services-content .easy-use {
+    width: 24%;
+}
+
+section.popular-crypto-trade .head-text h2{
+    max-width: 668px;
+    margin:0 auto 20px;
+}
+section.popular-crypto-trade .head-text p{
+    max-width: 750px;
+    margin:0 auto;
+}
+.popular-trade-box{
+   box-shadow: 0px 31.5px 49px 0px #F469684D;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    border-radius: var(--radius-16px);
+    height: 90%;
+}
+.popular-trade-box.card:hover {
+    background: rgb(244 105 104 / 30%);
+    box-shadow: none !important;
+    cursor: default;
+}
+.popular-trade-box h3{
+    margin-bottom:14px
+}

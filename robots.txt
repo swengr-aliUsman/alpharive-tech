@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /blog/wp-admin/
+Disallow: /success/
+Disallow: /?s=
+Disallow: /?amp=1
+
+Sitemap: https://www.opris.exchange/sitemap.xml
+Sitemap: https://www.opris.exchange/blog/sitemap_index.xml

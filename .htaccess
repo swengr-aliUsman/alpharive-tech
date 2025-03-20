@@ -1,0 +1,378 @@
+
+RewriteOptions inherit
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^opris.exchange [NC]
+RewriteRule ^(.*)$ https://www.opris.exchange/$1 [L,R=301]
+
+# Redirect multiple trailing slashes to a single slash
+RewriteCond %{REQUEST_URI} ^(.+?)/{2,}$  
+RewriteRule ^ %1/ [R=301,L]
+
+# Redirect root URL with slashes to just the domain
+RewriteCond %{REQUEST_URI} ^/{2,}$  
+RewriteRule ^ / [R=301,L]
+
+#RewriteRule ^(.+?)/$ /$1 [R=302,NE,L]
+
+#RewriteRule ^(.+)\.php - [F,L]
+
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+
+#RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ensure https
+
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+
+#RewriteCond %{HTTPS} off
+
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{THE_REQUEST} (.+)/amp(.*)$
+RewriteRule ^ %1/ [R=301,L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+    RewriteCond %{REQUEST_URI} /+[^\.]+$ 
+    RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+</IfModule>
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php 
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+Redirect 301 /home /index
+
+RedirectMatch 301 /hybrid-exchange-development/ /hybrid-cryptocurrency-exchange-development/
+
+RedirectMatch 301 /p2p-exchange-development/ /p2p-cryptocurrency-exchange-development/
+
+RedirectMatch 301 /otc-exchange-development/ /otc-crypto-exchange-development/
+
+RedirectMatch 301 /future-exchange-development/ /future-trading-software-development/
+
+RedirectMatch 301 /margin-exchange-development/ /margin-trading-exchange-development/
+
+RedirectMatch 301 /derivatives-exchange-development/ /derivative-trading-software-development/
+
+RedirectMatch 301 /localbitcoin-clone-script/ /localbitcoins-clone-script/
+
+RedirectMatch 301 /coin-payment-clone-script/ /coinpayments-clone-script/
+
+
+RedirectMatch 301 /blog/centralized-crypto-exchange-development/ /centralized-exchange-development/
+
+RedirectMatch 301 /blog/decentralized-exchange-development/ /decentralized-exchange-development/
+
+
+RedirectMatch 301 /p2p-cryptocurrency-exchange-development/ /blog/p2p-crypto-exchange-development/
+
+RedirectMatch 301 /blog/white-label-cryptocurrency-exchange-software-development/ /white-label-cryptocurrency-exchange-development/
+
+RedirectMatch 301 /white-label-cryptocurrency-exchange-software/ /white-label-cryptocurrency-exchange-development/ 
+
+RedirectMatch 301 /blog/how-ico-development-services-can-take-your-company-to-the-next-level/ /ico-development-services/ 
+
+RedirectMatch 301 /hybrid-cryptocurrency-exchange-development/ /blog/hybrid-crypto-exchange-development/
+
+RedirectMatch 301 /blog/p2p-crypto-exchange-development/  /p2p-crypto-exchange-development/ 
+
+RedirectMatch 301 /blog/build-your-crypto-wallet-application-with-trustwallet-clone-script/  /blog/trust-wallet-clone/ 
+
+RedirectMatch 301 /trust-wallet-clone-script/  /blog/trust-wallet-clone/ 
+
+RedirectMatch 301 /blog/portfolio-tag/travelling/  /blog/ 
+RedirectMatch 301 /blog/home-4/  /blog/ 
+RedirectMatch 301 /blog/checkout-2/  /blog/ 
+RedirectMatch 301 /blog/shop/  /blog/ 
+RedirectMatch 301 /blog/cart-2/  /blog/ 
+RedirectMatch 301 /blog/portfolio-masonry-style-2/  /blog/ 
+RedirectMatch 301 /blog/hero-type-2/  /blog/ 
+RedirectMatch 301 /blog/blog/medium-image/  /blog/ 
+RedirectMatch 301 /blog/hero-type-4/  /blog/ 
+RedirectMatch 301 /blog/first-recent/  /blog/ 
+RedirectMatch 301 /blog/blog/hero-type-3/  /blog/ 
+RedirectMatch 301 /blog/sample-page/  /blog/ 
+RedirectMatch 301 /integration/  /blog/ 
+RedirectMatch 301 /search/  /blog/ 
+RedirectMatch 301 /blog/opris-blog/  /blog/ 
+RedirectMatch 301 /blog/nft-marketplace-development-company/  /nft-marketplace-development-company/
+RedirectMatch 301 /bi/  /
+RedirectMatch 301 /skype.cid.b4d98d670fe822a2  /contactus/
+RedirectMatch 301 /contact-us/  /contactus/
+
+
+
+RewriteRule ^/$ index.php [L]
+
+RewriteRule ^contactus$ contact.php [L]
+
+RewriteRule ^contactus/$ contact.php [L]
+
+RewriteRule ^submitform$ contact-form.php [L]
+
+RewriteRule ^submitform/$ contact-form.php [L]
+
+RewriteRule ^submitcontact$ contact-form.php [L]
+
+RewriteRule ^submitcontact/$ contact-form.php [L]
+
+# RewriteRule ^aboutus$ about.php [L]
+
+# RewriteRule ^aboutus/$ about.php [L]
+
+RewriteRule ^aboutus$ about-us.php [L]
+
+RewriteRule ^aboutus/$ about-us.php [L]
+
+RewriteRule ^test-form/$ test-form.php [L]
+
+RewriteRule ^success$ success.php [L]
+
+RewriteRule ^success/$ success.php [L]
+
+RewriteRule ^privacy-policy$ privacy-policy.php [L]
+
+RewriteRule ^privacy-policy/$ privacy-policy.php [L]
+
+RewriteRule ^terms-conditions$ terms-conditions.php [L]
+
+RewriteRule ^terms-conditions/$ terms-conditions.php [L]
+
+RewriteRule ^refund-policy$ refund-policy.php [L]
+
+RewriteRule ^refund-policy/$ refund-policy.php [L]
+
+# RewriteRule ^new-script/$ binance-clone-script-new.php [L]
+
+RewriteRule ^coinbase-clone-script$ coinbase-clone-new.php [L]
+
+RewriteRule ^coinbase-clone-script/$ coinbase-clone-new.php [L]
+
+RewriteRule ^bybit-clone-script$ bybit-clone-script.php [L]
+RewriteRule ^bybit-clone-script/$ bybit-clone-script.php [L]
+
+RewriteRule ^service/$ service-new.php [L]
+
+RewriteRule ^binance-clone-script$ binance-clone-script-new.php [L]
+
+RewriteRule ^binance-clone-script/$ binance-clone-script-new.php [L]
+
+# RewriteRule ^coinbase-clone-script-new$ coinbase-clone-new.php [L]
+
+# RewriteRule ^coinbase-clone-script-new/$ coinbase-clone-new.php [L]
+
+# RewriteRule ^trust-wallet-clone-script$ trust-wallet-clone-script.php [L]
+
+RewriteRule ^trust-wallet-clone-script/$ trust-wallet-clone-script.php [L]
+
+RewriteRule ^wazirx-clone-script$ wazirx-clone-script.php [L]
+
+RewriteRule ^wazirx-clone-script/$ wazirx-clone-script.php [L]
+
+RewriteRule ^paxful-clone-script$ paxful-clone-script.php [L]
+
+RewriteRule ^paxful-clone-script/$ paxful-clone-script.php [L]
+
+RewriteRule ^poloniex-clone-script/$ poloniex-clone-script.php [L]
+
+RewriteRule ^remitano-clone-script$ remitano-clone-script.php [L]
+
+RewriteRule ^remitano-clone-script/$ remitano-clone-script.php [L]
+
+RewriteRule ^kucoin-clone-script$ kucoin-clone-script.php [L]
+
+RewriteRule ^kucoin-clone-script/$ kucoin-clone-script.php [L]
+
+RewriteRule ^huobi-clone-script$ huobi-clone-script.php [L]
+
+RewriteRule ^huobi-clone-script/$ huobi-clone-script.php [L]
+
+RewriteRule ^kraken-clone-script$ kraken-clone-script.php [L]
+
+RewriteRule ^kraken-clone-script/$ kraken-clone-script.php [L]
+
+RewriteRule ^bitstamp-clone-script$ bitstamp-clone-script.php [L]
+
+RewriteRule ^bitstamp-clone-script/$ bitstamp-clone-script.php [L]
+
+RewriteRule ^bitfinex-clone-script$ bitfinex-clone-script.php [L]
+
+RewriteRule ^bitfinex-clone-script/$ bitfinex-clone-script.php [L]
+
+# RewriteRule ^metamask-wallet-clone-script$ metamask-wallet-clone-script.php [L]
+
+RewriteRule ^metamask-wallet-clone-script/$ metamask-wallet-clone-script.php [L]
+
+RewriteRule ^coinpayments-clone-script$ coinpayment-clone-script.php [L]
+
+RewriteRule ^coinpayments-clone-script/$ coinpayment-clone-script.php [L]
+
+RewriteRule ^bitpay-clone-script$ bitpay-clone-script.php [L]
+
+RewriteRule ^bitpay-clone-script/$ bitpay-clone-script.php [L]
+
+RewriteRule ^pancakeswap-clone-script/$ pancakeswap-clone-script.php [L]
+
+RewriteRule ^uniswap-clone-script/$ uniswap-clone-script.php [L]
+
+RewriteRule ^sushiswap-clone-script/$ sushiswap-clone-script.php [L]
+
+RewriteRule ^bakeryswap-clone-script/$ bakeryswap-clone-script.php [L]
+
+RewriteRule ^white-label-cryptocurrency-wallet/$ white-label-wallet-clone-script.php [L]
+
+RewriteRule ^1inch-exchange-clone-script/$ 1-inch-clone-script.php [L]
+
+RewriteRule ^web3-wallet-development/$ web3-wallet-development.php [L]
+
+RewriteRule ^defi-wallet-development/$ defi-wallet-development.php [L]
+
+RewriteRule ^ccoin/$ crypto-coin-development-services.php [L]
+
+RewriteRule ^nft/$ Non-fungible-token.php [L]
+
+RewriteRule ^coinbase-clone-script$ coinbase.php [L]
+
+RewriteRule ^coinbase-clone-script/$ coinbase.php [L]
+
+RewriteRule ^paxful-clone-script$ paxful.php [L]
+
+RewriteRule ^paxful-clone-script/$ paxful.php [L]
+
+RewriteRule ^poloniex-clone-script$ poloniex.php [L]
+
+RewriteRule ^poloniex-clone-script/$ poloniex.php [L]
+
+RewriteRule ^localbitcoins-clone-script/$ localbitcoin-clone-script.php [L]
+
+RewriteRule ^white-label-cryptocurrency-exchange-software/$ white-label-cryptocurrency-exchange-development-services.php [L]
+
+# RewriteRule ^centralized-exchange-development/$ centralized.php [L]
+
+# RewriteRule ^centralized-exchange-development$ centralized.php [L]
+
+RewriteRule ^hybrid-cryptocurrency-exchange-development/$ hybrid-cryptocurrency-exchange-development.php [L]
+
+RewriteRule ^derivative-trading-software-development/$ derivative-trading-software-development.php [L]
+
+RewriteRule ^margin-trading-exchange-development/$ margin-trading-exchange-software-development.php [L]
+
+RewriteRule ^future-trading-software-development/$ crypto-futures-trading-software-development.php [L]
+
+RewriteRule ^otc-crypto-exchange-development/$ otc-crypto-exchange-software-development-services.php [L]
+
+RewriteRule ^p2p-cryptocurrency-exchange-development/$ p2p-crypto-exchange-software-development.php [L]
+
+RewriteRule ^p2p-crypto-exchange-development/$ p2p-crypto-exchange-development-company.php [L]
+
+#RewriteRule ^404/$ 404page.php [L]
+
+# RewriteRule ^centralized-exchange-development/$ centralized-cryptocurrency-exchange-development-services.php [L]
+
+# RewriteRule ^centralized-exchange-development$ centralized-cryptocurrency-exchange-development-services.php [L]
+
+RewriteRule ^crypto-payment-gateway-development/$ cryptocurrency-payment-gateway-development-services.php [L]
+
+RewriteRule ^spot-trading-crypto-exchange-development/$ spot-trading-crypto-exchange-development-services.php [L]
+
+RewriteRule ^crypto-token-development-services/$ crypto-token-development-services.php [L]
+
+RewriteRule ^defi-staking-platform-development/$ deFi-staking-platform-development-services.php [L]
+
+RewriteRule ^ieo-development-services/$ initial-exchange-offering-development-services.php [L]
+
+RewriteRule ^ico-development-services/$ ico-development-services.php [L]
+RewriteRule ^decentralized-exchange-development/$ decentralized-exchange-development-company.php [L]
+
+RewriteRule ^crypto-copy-trading-software-development/$ crypto-copy-trading-services.php [L]
+# RewriteRule ^dao-development-services/$ dao-development-services.php [L]
+
+# New pages
+
+RewriteRule ^crypto-trading-bot-development/$ crypto-trading-bot-development.php [L]
+
+RewriteRule ^crypto-trading-bot-development$ crypto-trading-bot-development.php [L]
+
+RewriteRule ^cryptocurrency-exchange-development/$ cryptocurrency-exchange-development.php [L]
+
+RewriteRule ^cryptocurrency-exchange-development$ cryptocurrency-exchange-development.php [L]
+
+RewriteRule ^blockchain-development-company$ blockchain-development-company.php [L]
+
+RewriteRule ^blockchain-development-company/$ blockchain-development-company.php [L]
+
+RewriteRule ^blockchain-game-development$ blockchain-game-development-company.php [L]
+
+RewriteRule ^blockchain-game-development/$ blockchain-game-development-company.php [L]
+
+RewriteRule ^cryptocurrency-wallet-development$ cryptocurrency-wallet-development-company.php [L]
+
+RewriteRule ^cryptocurrency-wallet-development/$ cryptocurrency-wallet-development-company.php [L]
+
+RewriteRule ^web3-development-company$ web3-development-company.php [L]
+
+RewriteRule ^web3-development-company/$ web3-development-company.php [L]
+
+RewriteRule ^white-label-cryptocurrency-exchange-development$ White-label-crypto-exchange-development-company.php [L]
+
+RewriteRule ^white-label-cryptocurrency-exchange-development/$ White-label-crypto-exchange-development-company.php [L]
+
+RewriteRule ^centralized-exchange-development$ centralized-exchange-development-company.php [L]
+
+RewriteRule ^centralized-exchange-development/$ centralized-exchange-development-company.php [L]
+RewriteRule ^nft-marketplace-development-company/$ nft-marketplace-development-company.php [L]
+
+RewriteRule ^portfolio/$ portfolio.php [L]
+RewriteRule ^portfolio$ portfolio.php [L]
+
+
+ErrorDocument 404 /404page.php
+
+ErrorDocument 403 /404page.php
+
+<IfModule mod_expires.c>
+
+Header set Strict-Transport-Security "max-age=31536000" env=HTTPS
+
+</IfModule>
+
+<IfModule mod_expires.c>
+
+# Enable expirations
+
+ExpiresActive On 
+
+# Default directive
+
+ExpiresDefault "access plus 6 month"
+
+# Images
+
+ExpiresByType images/png "access plus 6 month"
+
+ExpiresByType images/jpg "access plus 6 month"
+
+ExpiresByType images/jpeg "access plus 6 month"
+
+ExpiresByType images/svg "access plus 6 month"
+
+# CSS
+
+ExpiresByType text/css "access plus 6 month"
+
+# Javascript
+
+ExpiresByType text/javascript "access plus 6 month"
+
+ExpiresByType application/javascript "access plus 6 month"
+
+</IfModule>

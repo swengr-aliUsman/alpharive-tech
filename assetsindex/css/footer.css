@@ -1,0 +1,125 @@
+section.footer-part {
+    background: #fce5e5;
+}
+
+section.footer-part h4 {
+    font-weight: 800;
+}
+
+section.footer-part h4 {
+    font-weight: 800;
+}
+
+section.footer-part .contain-width {
+    padding: 50px 0 0;
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+section.footer-part ul {
+    list-style: none;
+    padding-left: 0px;
+    white-space: nowrap;
+}
+
+section.footer-part ul li {
+    margin: 5px 0;
+}
+
+.foot-right {
+    padding-left: 10%;
+}
+
+ul.foot-links {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+ul.follow-icon-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.foot-image img {
+    width: 100%;
+}
+
+section.footer-part ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.timeline .draw-line {
+    width: 4px;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    background: #ff0000;
+    z-index: -1;
+}
+
+/** new css **/
+
+section.footer-part ul.follow-icon-list {
+    flex-wrap: wrap !important;
+}
+
+section.footer-part ul.follow-icon-list li {
+    width: 22%;
+    text-align: left;
+    gap: 10px !important;
+    margin-top: 10px;
+}
+
+.footer-menu-start-point {
+    padding-left: 40px !important;
+}
+
+section.footer-part .row {
+    padding-top: 0px !important;
+}
+
+.award-batches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 10px;
+    padding-top: 30px;
+}
+
+.award-batches .batches {
+    width: 14%;
+    /*text-align: center;*/
+}
+
+.award-batches .batches img {
+    width: 120px;
+}
+
+section.footer-part .copy-rigt-part .contain-width {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    border-top: 1px solid #000 !important;
+}
+
+section.footer-part .contain-width {
+    padding-top: 50px !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    padding-bottom: 50px !important;
+}
+
+@media (max-width:991.98px){
+    
+    .footer-menu-start-point {
+    padding-left: 15px !important;
+}
+
+.award-batches .batches{width:auto !important;}
+
+.social-icons-contact-fixed{bottom:0px !important;}
+    
+}

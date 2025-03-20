@@ -1,0 +1,225 @@
+.explore-btn a {
+  color: #000;
+  position: relative;
+  padding: 10px 35px;
+  border: 0px solid !important;
+  border-color: transparent !important;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  box-shadow: 0 0 0 2px #781d1d;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+}
+
+.explore-btn a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fe5855;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.explore-btn a:hover:before {
+  width: 420px;
+  height: 420px;
+  opacity: 1;
+}
+
+.explore-btn a:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #fff;
+  border-radius: 12px;
+}
+/* carousel */
+.carouselp .explore-btn a span{
+  margin-left: 10px;
+    }
+    .carouselp .explore-btn a:hover svg path{
+  fill:#fff
+    }
+    .carouselp .explore-btn a{
+      border: 1.5px solid #FF0004 !important;
+      box-shadow: 0px 0px 42.95px 0px #F72D301A !important; 
+      padding: 10px 14px !important;
+    }
+    .carouselp {
+      background: #ffeaea;
+      padding: 30px 20px;
+      border-radius: 40px;
+      /* min-height: 500px; */
+    }
+    .carouselp-left span{
+      text-transform: uppercase;
+    }
+     .carouselp-left label{
+      border: 0.92px solid #0B001A;
+      border-radius: 20px;
+      padding: 7px 10px;
+      margin-right:10px;
+      font-size: 17px;
+      margin-bottom:20px !important ;
+    }
+    .carouselp-right img {
+      width: 100%;
+      transition: opacity 0.5s ease-in-out;
+      height:auto;
+    }
+    .portfolio-carousel-content{
+      min-height: 110px;
+      margin-top: 10px;
+    }
+    .carouselp-left h3{
+      font-size: clamp(24px,5vw,36px) !important;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 5px;
+    }
+    .carouselp-left{
+      padding-right: 30px;
+    }
+    .carouselp-thumbnails {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+      overflow:hidden;
+    }
+    
+    .carouselp-thumbnails img {
+      width: 137px;
+      height: auto;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    
+    .carouselp-thumbnails img.active {
+  display: none;
+    }
+    
+    .carouselp-pagination {
+      
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .pagination-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #bbafaf;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .pagination-dot.active {
+      background-color: #ff4b4b;
+      transform: scale(1.2);
+    }
+   
+  .carouselp-thumbnails-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+section.client-says .swiper-wrapper{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.client-says .card-description h3{
+  font-size: 32px !important;
+  font-weight: 400 !important;
+  margin-bottom: clamp(15px,5vw,25px);
+}
+ .client-says  .swiper-slide {
+    border-radius: 26px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 14.44px 43.33px 0px #2E213D14;
+    padding:20px 50px;
+
+  }
+.client-says  .rating {
+  display: flex;
+  align-items: center;
+}
+.client-profile{
+  margin-right: 20px;
+}
+.client-says  .rating-value {
+  font-size: 16px;
+  margin-right: 10px;
+}
+.client-says .stars {
+  display: flex;
+}
+.client-says .star {
+  font-size: 20px;
+  color: #ccc  ;
+}
+.client-says  .star.full {
+  color: #FFA800;
+}
+.client-says  .star.half {
+  color: #FFA800; 
+}
+/* .our-portfolio h2,.our-clients-say h2{
+      margin-bottom: var(--mar-30px);
+} */
+.global-crypto-services .head-text{
+  max-width: 100% !important;
+}
+.global-crypto-services{
+  background: var(--linear-bg);
+  color: var(--white-text) !important;
+  padding: 40px 0;
+}
+.global-crypto-services .services-tabs{
+  gap: 14px !important;
+}
+.services-item .nav-link{
+  border: 1px solid  #FD1716;
+  border-radius: 10px;
+  background: #fff;
+color: #000;
+  padding: 10px 20px;
+  width: 188px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+}
+.services-item .nav-link.active{
+  border: 1px solid #FFFFFF !important;
+  color: var(--white-text) !important;
+  background: linear-gradient(57.89deg, #FF1717 -6.53%, #FF6461 92.66%) !important;
+}
+.services-item .nav-link span{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+ 
+}
+.services-tab-content .tab-pane{
+  max-width: 850px;
+  margin: 20px auto 0;
+  text-align: center;
+}
