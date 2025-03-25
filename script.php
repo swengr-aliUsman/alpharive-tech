@@ -1,5 +1,3 @@
-<script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
-
 <script>
 $("#country_selector").countrySelect({
 	defaultCountry: "us",
@@ -67,33 +65,23 @@ $("#country_selector").countrySelect({
     });
         
 </script>
-
 <script>
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/619e4abe6bb0760a49442ca9/1fl957umv';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-
+    window.onload = function () {
+        setTimeout(function () {
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script");
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/634cea41daff0e1306d25507/1gfi765ld';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                document.body.appendChild(s1);
+            })();
+        }, 3000); // 3 seconds delay
+    };
 </script>
 
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/634cea41daff0e1306d25507/1gfi765ld';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
 <!--End of Tawk.to Script-->
 
 <!-- Default Statcounter code for Crypto Exchange Development

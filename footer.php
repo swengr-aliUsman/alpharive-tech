@@ -119,9 +119,26 @@ $(document).ready(function() {
     $('.we-go-fast a.nav-link.menu-last').click(function() {
         $("#appo-container").show()
     });
-})
-</script>
+});
 
-<!-- - Google analytics --> 
-<script async> function googletag() { var head = document.getElementsByTagName("head")[0]; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D"; script.defer = true; head.appendChild(script); } setTimeout(googletag, 7000); window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } setTimeout(() => { gtag('js', new Date()); gtag('config', 'G-N4LQ0H5J5D', { 'debug_mode': true }); }, 7000); </script> 
-<!--- End google analytics -->
+</script>
+<!-- Google Analytics -->
+<script>
+  function loadGoogleTag() {
+    let script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D";
+    script.async = true;
+    document.head.appendChild(script);
+
+    script.onload = function () {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-N4LQ0H5J5D', { 'debug_mode': true });
+    };
+  }
+
+  // Delay loading GA for 7 seconds (to improve performance)
+  setTimeout(loadGoogleTag, 7000);
+</script>
+<!-- End Google Analytics -->

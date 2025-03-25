@@ -13,34 +13,27 @@
     <meta name="keywords"
         content="Digital Transformation Company, Digital Transformation Services, Digital Transformation Solutions. ">
 
-    <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.otf" as="font" type="font/otf" crossorigin>
+    <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+
     <style>
         @font-face {
-            font-family: poppins;
+            font-family: 'Poppins';
             font-style: normal;
-            src: url("../fonts/Poppins-Regular.otf");
+            font-weight: 400;
+            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
             font-display: swap;
         }
     </style>
+
+
+    <!-- here is head file exist in all files -->
+    <?php include('inc/head.php'); ?>
+    <!-- here is head file exist in all files -->
+    <!-- Extra files -->
     <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="assets/css/header.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/custom.css" fetchpriority="low" />
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/media.css" />
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/aos.css" fetchpriority="low">
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/fontawesome/css/all.min.css"
-        fetchpriority="low">
-    
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/contact.css">
-
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/form.css">
-
     <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/swiper-bundle.min.css" fetchpriority="low">
-
-    <link rel="canonical" href="<?php echo $canonical; ?>" />
-
-
+    <!-- Extra files -->
     <!-- Facebook -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -53,9 +46,8 @@
         content="<?php echo $siteurl; ?>assets/images/og-images/digital-transform-company.png" />
     <meta property="og:image:alt" content="Blockchain Development Services" />
     <meta property="og:site_name" content="Opris Exchange" />
-
+    <!-- Facebook -->
     <!-- Twitter -->
-
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Opris Exchange">
     <meta name="twitter:creator" content="@Opris Exchange">
@@ -64,41 +56,16 @@
     <meta name="twitter:title" content="Blockchain Development Services" />
     <meta name="twitter: image"
         content="<?php echo $siteurl; ?>assets/images/og-images/digital-transform-company.png" />
-
-
+    <!-- Twitter -->
+    <!-- Google site verification -->
+    <link rel="canonical" href="<?php echo $canonical; ?>" />
     <meta name="google-site-verification" content="TeBLdhHlpPqgj36tVRFn6jJV41yB90UN0kBzR6B7PZA" />
+    <!-- Google site verification -->
 
-    <!-- <section class="banner"> -->
 </head>
 
 <body class="homepage-page">
     <?php include('include/header.php'); ?>
-
-    <!-- <section class="banner">
-        <div class="contain-width">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <h1>Blockchain Development Companyiiiii</h1>
-                    <p>Where Innovative Ideas Meet <span class="txt-type" data-wait="4000" data-words='["Expert", "Smart","Passionate"]'> </span> Minds<br>
-                    to Make an Entrepreneur.
-                        </p>
-
-                    <div class="explore-btn">
-                        <a href="<?php echo $siteurl; ?>contactus/" target="_blank">Talk to Experts</a>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
-                    <div class="banner-right">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/banner-right-img.webp"
-                            class="banner-right-img" alt="Digital-Transformation-Company" width="" height=""
-                            loading="eager" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
 
     <section class="banner">
     <div class="contain-width">
@@ -1333,24 +1300,26 @@
 
     <?php include('include/form-inner.php'); ?>
 
-
     <?php include('include/footer.php'); ?>
-    <script src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+
     <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js"></script>
     <script src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
-    <script src="<?php echo $siteurl; ?>js/script1.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
 
     <script>
+        window.addEventListener('load', () => {
         AOS.init({
-
-            once: false,
-
+            once: true, // Ensures animations only happen once (prevents unnecessary shifts)
+            duration: 800, // Adjust animation speed to be smoother
+            easing: 'ease-out', // Adds smooth transition
         });
+    });
+
     </script>
     <!-- Get to know about the cryptocurrency exchange software development services -->
 
@@ -1613,136 +1582,102 @@
         });
 
     </script>
-    <script>
-        var swiper = new Swiper(".reviewSwiper", {
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            loop: true,
-            autoplay: {
-    delay: 5000,
-  },
-            //   pagination: {
-            //     el: ".swiper-pagination",
-            //     clickable: true,
-            //   },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 15,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-            on: {
-                slideChangeTransitionStart: function () {
-                    let slides = document.querySelectorAll('.reviewSwiper .swiper-slide');
-                    slides.forEach(slide => {
-                        slide.style.transform = 'scale(0.6)'; // Scale down all slides
-                    });
-                    let activeSlide = document.querySelector('.reviewSwiper .swiper-slide.swiper-slide-active');
-                    if (activeSlide) {
-                        activeSlide.style.transform = 'scale(1)'; // Scale up the active slide
-                    }
-                },
-                init: function () {
-                    let activeSlide = document.querySelector('.reviewSwiper .swiper-slide.swiper-slide-active');
-                    if (activeSlide) {
-                        activeSlide.style.transform = 'scale(1)'; // Ensure active slide starts scaled up
-                    }
-                }
-            }
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Swiper !== "undefined") {
+      const swiper = new Swiper(".reviewSwiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+        on: {
+          init() {
+            scaleSlides();
+          },
+          slideChangeTransitionStart() {
+            scaleSlides();
+          },
+        },
+      });
 
+      function scaleSlides() {
+        document.querySelectorAll(".reviewSwiper .swiper-slide").forEach(slide => {
+          slide.style.transform = "scale(0.6)";
         });
-    </script>
-    <script>
-        var swiper = new Swiper(".slide-content", {
-            slidesPerView: 3,
-            spaceBetween: 25,
-            loop: true,
-            centerSlide: 'true',
-            fade: 'true',
-            grabCursor: 'true',
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-                dynamicBullets: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
 
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                },
-                767: {
-                    slidesPerView: 2,
-                },
-                950: {
-                    slidesPerView: 3,
-                },
-            },
-        });
-    </script>
-    <script>
-        class TypeWriter {
+        const activeSlide = document.querySelector(".reviewSwiper .swiper-slide.swiper-slide-active");
+        if (activeSlide) {
+          activeSlide.style.transform = "scale(1)";
+        }
+      }
+    }
+  });
+</script>
+
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper after the page has loaded
+    if (typeof Swiper !== "undefined") {
+      new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          767: { slidesPerView: 2 },
+          950: { slidesPerView: 3 },
+        },
+      });
+    }
+
+    // TypeWriter Effect
+    class TypeWriter {
       constructor(txtElement, words, wait = 1000) {
         this.txtElement = txtElement;
         this.words = words;
-        this.txt = '';
+        this.txt = "";
         this.wordIndex = 0;
-        this.wait = parseInt(wait, 8);
-        this.type();
+        this.wait = parseInt(wait, 10);
         this.isDeleting = false;
+        setTimeout(() => this.type(), 500); // Start after delay
       }
 
       type() {
-        // Current index of word
         const current = this.wordIndex % this.words.length;
-        // Get full text of current word
         const fullTxt = this.words[current];
 
-        // Check if deleting
-        if(this.isDeleting) {
-          // Remove char
-          this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-          // Add char
-          this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+        this.txt = this.isDeleting
+          ? fullTxt.substring(0, this.txt.length - 1)
+          : fullTxt.substring(0, this.txt.length + 1);
 
-        // Insert txt into element
-        this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-
-        // change color for data-text
         this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;">${this.txt}</span>`;
 
-        // Initial Type Speed
-        let typeSpeed = 50;
+        let typeSpeed = this.isDeleting ? 25 : 50;
 
-        if(this.isDeleting) {
-          typeSpeed /= 1;
-        }
-
-        // If word is complete
-        if(!this.isDeleting && this.txt === fullTxt) {
-          // Make pause at end
+        if (!this.isDeleting && this.txt === fullTxt) {
           typeSpeed = this.wait;
-          // Set delete to true
           this.isDeleting = true;
-        } else if(this.isDeleting && this.txt === '') {
+        } else if (this.isDeleting && this.txt === "") {
           this.isDeleting = false;
-          // Move to next word
           this.wordIndex++;
-          // Pause before start typing
           typeSpeed = 400;
         }
 
@@ -1750,23 +1685,15 @@
       }
     }
 
-    // Init On DOM Load
-    document.addEventListener('DOMContentLoaded', init);
-
-    // Init App
-    function init() {
-      const txtElement = document.querySelector('.txt-type');
-      const words = JSON.parse(txtElement.getAttribute('data-words'));
-      const wait = txtElement.getAttribute('data-wait');
-      // Init TypeWriter
+    // Initialize TypeWriter if element exists
+    const txtElement = document.querySelector(".txt-type");
+    if (txtElement) {
+      const words = JSON.parse(txtElement.getAttribute("data-words"));
+      const wait = txtElement.getAttribute("data-wait") || 1000;
       new TypeWriter(txtElement, words, wait);
     }
-    </script>
-
-
-
-
-
+  });
+</script>
 
 </body>
 
