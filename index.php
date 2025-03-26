@@ -14,7 +14,7 @@
         content="Digital Transformation Company, Digital Transformation Services, Digital Transformation Solutions. ">
 
     <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
-
+    <link rel="preload" as="image" href="<?php echo $siteurl; ?>assets/images/index/banner-bg.webp" type="image/webp" />
     <style>
         @font-face {
             font-family: 'Poppins';
@@ -31,7 +31,7 @@
     <!-- here is head file exist in all files -->
     <!-- Extra files -->
     <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css<?php echo $version; ?>" />
     <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/swiper-bundle.min.css" fetchpriority="low">
     <!-- Extra files -->
     <!-- Facebook -->
