@@ -1390,7 +1390,7 @@
     <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js"></script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js"></script>
     <script src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
