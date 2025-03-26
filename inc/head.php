@@ -10,7 +10,8 @@
 <!-- included in 71 file -->
 <link rel="preload" href="<?php echo $siteurl; ?>css/contact.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <!-- Latest Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+
 
 
 
