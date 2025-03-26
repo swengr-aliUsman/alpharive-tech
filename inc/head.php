@@ -5,7 +5,7 @@
 
 <link rel="preload" href="assets/css/media.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="assets/css/media.css<?php echo $version; ?>"></noscript>
-<link rel="preload" href="<?php echo $siteurl; ?>assets/css/root.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="<?php echo $siteurl; ?>assets/css/root.min.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
 <!-- included in 71 file -->
