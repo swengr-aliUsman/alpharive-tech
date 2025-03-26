@@ -94,7 +94,8 @@
                         alt="Digital Transformation Company" 
                         width="845" 
                         height="660" 
-                        loading="lazy">
+                        loading="lazy"
+                        fetchpriority="high">
                 </div>
             </div>
         </div>
