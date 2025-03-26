@@ -13,14 +13,15 @@
     <meta name="keywords"
         content="Digital Transformation Company, Digital Transformation Services, Digital Transformation Solutions. ">
 
-    <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
     <link rel="preload" as="image" href="<?php echo $siteurl; ?>assets/images/index/banner-bg.webp" type="image/webp" />
+    <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
     <style>
         @font-face {
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
-            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
+            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2") format("woff2");
             font-display: swap;
         }
     </style>
