@@ -89,7 +89,6 @@
                     alt="cryptocurrency-exchange-development-services"></a></li>
     </ul>
 </div>
-<script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
 <script>
 $(document).ready(function() {
     $('a.close-menu').click(function() {
