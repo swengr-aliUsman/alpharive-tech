@@ -1,4 +1,4 @@
-@import url('./root.css');.head-subpage{gap:var(--gap-25);justify-content:var(--justi-c);align-items:var(--align-c)}
+.head-subpage{gap:var(--gap-25);justify-content:var(--justi-c);align-items:var(--align-c)}
 button.navbar-toggler{border:var(--none)}
 nav input{display:var(--none)}
 ul li{list-style:var(--none)}.close-menu{color:var(--text-black);font-size:var(--font-20);cursor:pointer;display:var(--none)}.nav-links{display:inline-flex;margin:0;align-items:baseline;justify-content:var(--justi-sb);width:100%;padding-left:5px}.drop-down-menu-exch:hover.drop-menu{transition:all 0.3s ease;top:40px;opacity:1;visibility:visible!important;width:90%;transition:.5s;height:auto!important}.drop-down-menu-exch:hover ul.drop-menu.insight{width:20%;transform:translate(0,10px);border-radius:15px;top:50px!important}.drop-down-menu-exch:hover ul.drop-menu.insight.payment_menu{width:32%}
