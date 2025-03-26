@@ -81,9 +81,20 @@
             </div>
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
                 <div class="banner-right">
-                    <img src="<?php echo $siteurl; ?>assets/images/index/banner-right-img.webp"
-                        class="banner-right-img" alt="Digital Transformation Company" width="845" height="660"
-                        loading="eager" />
+                    
+                        <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/banner-right-img-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/banner-right-img-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/banner-right-img-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/banner-right-img.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="banner-right-img" 
+                        alt="Digital Transformation Company" 
+                        width="845" 
+                        height="660" 
+                        loading="lazy">
                 </div>
             </div>
         </div>
@@ -167,8 +178,20 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-1.webp"
-                            alt="crypto-exchange-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-1-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-1-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-1-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-1.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Crypto Exchange Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
             </div>
@@ -176,8 +199,20 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-2.webp"
-                            alt="crypto-Payment-Gateway-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-2-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-2-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-2-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-2.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Crypto Payment Gateway Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -225,8 +260,20 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-3.webp"
-                            alt="cryptocurrency-exchange-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-3-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-3-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-3-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-3.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Cryptocurrency Exchange Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
             </div>
@@ -234,8 +281,20 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-4.webp"
-                            alt="cryptocurrency-exchange-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-4-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-4-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-4-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-4.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Cryptocurrency Exchange Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -282,8 +341,20 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-5.webp"
-                            alt="cryptocurrency-exchange-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-5-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-5-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-5-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-5.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Cryptocurrency Exchange Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
             </div>
@@ -291,8 +362,20 @@
 
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="digital-trans-img">
-                        <img src="<?php echo $siteurl; ?>assets/images/index/transform-solution-6.webp"
-                            alt="cryptocurrency-exchange-development" width="500" height="350" loading="lazy" />
+                    <img 
+                        src="<?php echo $siteurl; ?>assets/images/index/transform-solution-6-small.webp" 
+                        srcset="
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-6-small.webp 400w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-6-medium.webp 768w,
+                            <?php echo $siteurl; ?>assets/images/index/transform-solution-6.webp 1200w
+                        "
+                        sizes="(max-width: 600px) 400px, (max-width: 1024px) 768px, 1200px"
+                        class="transform-solution-img"
+                        alt="Cryptocurrency Exchange Development"
+                        width="500"
+                        height="350"
+                        loading="lazy">
+
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
