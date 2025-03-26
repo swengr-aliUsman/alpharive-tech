@@ -45,7 +45,7 @@
 
             <div class="row">
                 <input type="hidden" name="hiddencountry" id="hiddencountry" class="form-control" placeholder="country" aria-label="country" required="">
-  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group outer-flags-flag"> 
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 form-group outer-flags-flag" style="margin-bottom: 15px;"> 
     <select class="form-select form-comm-style countries" id="countries" name="country" aria-label="country" size="1">
      <option value="" hidden="">Select Country</option>
      <option value="+93" data-phonecode="10">Afghanistan</option>
