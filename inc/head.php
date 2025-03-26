@@ -3,8 +3,8 @@
 <link rel="stylesheet" type="text/css" href="assets/css/custom.css" fetchpriority="low" />
 <link rel="preload" href="assets/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="preload" href="assets/css/media.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/media.css"></noscript>
+<link rel="preload" href="assets/css/media.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/media.css<?php echo $version; ?>"></noscript>
 
 
 <!-- included in 71 file -->
