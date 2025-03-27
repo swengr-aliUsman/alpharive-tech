@@ -1,5 +1,5 @@
 <!-- included in 58 file -->
-<link rel="stylesheet" type="text/css" href="assets/css/header.css<?php echo $version; ?>" />
+<link rel="stylesheet" type="text/css" href="assets/css/header.css<?php echo $version; ?>" rel="preload" />
 <link rel="stylesheet" type="text/css" href="assets/css/custom.css<?php echo $version; ?>" fetchpriority="low" />
 <link rel="preload" href="assets/css/footer.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
