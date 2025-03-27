@@ -434,9 +434,27 @@ $(window).scroll(function(){
 
     </script>
     
-<!-- - Google analytics --> 
-<script async> function googletag() { var head = document.getElementsByTagName("head")[0]; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D"; script.defer = true; head.appendChild(script); } setTimeout(googletag, 7000); window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } setTimeout(() => { gtag('js', new Date()); gtag('config', 'G-N4LQ0H5J5D', { 'debug_mode': true }); }, 7000); </script> 
-<!--- End google analytics -->
+<!-- Google Analytics -->
+<script>
+    function loadGoogleAnalytics() {
+        var script = document.createElement("script");
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D";
+        script.async = true;
+        document.head.appendChild(script);
+
+        script.onload = function () {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-N4LQ0H5J5D', { 'debug_mode': true });
+        };
+    }
+
+    // Load GA only after the user scrolls or interacts with the page
+    window.addEventListener('scroll', loadGoogleAnalytics, { once: true });
+    window.addEventListener('click', loadGoogleAnalytics, { once: true });
+</script>
+<!-- End Google Analytics -->
 
 <!--Start of Tawk.to Script-->
 
