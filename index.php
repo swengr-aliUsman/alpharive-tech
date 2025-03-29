@@ -73,7 +73,7 @@
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <h1>Blockchain Development Company</h1>
-                <p>Where Innovative Ideas Meet <span class="txt-type" data-wait="4000" data-words='["Expert", "Smart","Passionate"]' style="color: #e2000f;width:100px;display:inline-block;font-size:18px">Expert</span> Minds<br>
+                <p>Where Innovative Ideas Meet <span class="txt-type" data-wait="4000" data-words='["Expert", "Smart","Passionate"]' style="color: #e2000f;width:100px;min-width:100px;display:inline-block;font-size:18px">Expert</span> Minds<br>
                     to Make an Entrepreneur.
                 </p>
                 <div class="explore-btn">
@@ -1753,7 +1753,7 @@
           ? fullTxt.substring(0, this.txt.length - 1)
           : fullTxt.substring(0, this.txt.length + 1);
 
-        this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;width:100px;display:inline-block;font-size:18px">${this.txt}</span>`;
+        this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;width:100px;min-width:100px;display:inline-block;font-size:18px">${this.txt}</span>`;
 
         let typeSpeed = this.isDeleting ? 25 : 50;
 
