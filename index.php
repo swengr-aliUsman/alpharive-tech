@@ -1392,8 +1392,17 @@
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let countryInput = document.querySelector(".niceCountryInput");
+            if (countryInput) {
+                let script = document.createElement("script");
+                script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
+                document.body.appendChild(script);
+            }
+        });
+    </script>
+    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
 
     <script>
