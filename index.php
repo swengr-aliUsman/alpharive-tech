@@ -21,9 +21,10 @@
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 400;
-            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2") format("woff2");
+            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
             font-display: swap;
         }
+        
         .d-mobile{
             display:none !important;
         }
