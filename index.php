@@ -1386,9 +1386,9 @@
     <?php include('include/form-inner.php'); ?>
 
     <?php include('include/footer.php'); ?>
-    <script defer="true" src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
+    <script defer="true" async src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js" async></script>
+    <script defer="true" async src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
     <script>
         window.onload = function () {
             let countryInput = document.querySelector(".niceCountryInput");
