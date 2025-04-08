@@ -1393,16 +1393,38 @@
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        window.onload = function () {
             let countryInput = document.querySelector(".niceCountryInput");
             if (countryInput) {
                 let script = document.createElement("script");
                 script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
                 document.body.appendChild(script);
             }
-        });
+        };
     </script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <?php if (isMobile()): ?>
+        <script>
+            window.onload = function () {
+                let swiper = document.querySelector(".niceswiper");
+                if (swiper) {
+                    let script = document.createElement("script");
+                    // Check if the screen width is mobile (for example, less than 768px)
+                    if (window.innerWidth <= 768) {
+                        // For mobile, load script with defer
+                        script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                        script.defer = true;
+                    } else {
+                        // For desktop, load script with defer as requested
+                        script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                        script.defer = true;
+                    }
+                    document.body.appendChild(script);
+                }
+            };
+        </script>
+    <?php else: ?>
+        <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <?php endif; ?>
     <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
 
     <script>
