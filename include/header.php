@@ -5,7 +5,7 @@
         <nav class="navbar navbar-expand-xl navbar-light">
             <a href="<?php echo $siteurl; ?>" class="opris-logo">
                 <img src="<?php echo $siteurl; ?>assets/images/logo1.webp" alt="Opris_Exchange" width="132"
-                    height="47" />
+                    height="47" style="min-height: 47px !important;" />
             </a>
             <div class="header-rht-icons">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"

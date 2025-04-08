@@ -1387,7 +1387,6 @@
 
     <?php include('include/footer.php'); ?>
     <script defer="true" src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
     <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
