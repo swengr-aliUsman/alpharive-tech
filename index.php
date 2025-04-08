@@ -1388,8 +1388,6 @@
     <?php include('include/footer.php'); ?>
     <script defer="true" src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
     <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
-    <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
     <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
     <script>
         window.onload = function () {
@@ -1399,6 +1397,22 @@
                 script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
                 document.body.appendChild(script);
             }
+
+            let popper = document.querySelector(".popper");
+            if (popper) {
+                let script = document.createElement("script");
+                script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
+                document.body.appendChild(script);
+            }
+
+            let slick = document.querySelector(".slick");
+            if (slick) {
+                let script = document.createElement("script");
+                script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
+                document.body.appendChild(script);
+            }
+
+           
         };
     </script>
     <?php if (isMobile()): ?>
