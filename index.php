@@ -1468,48 +1468,51 @@
     <script defer="true" async src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
     <script>
         window.onload = function () {
-            let countryInput = document.querySelector(".niceCountryInput");
-            if (countryInput) {
-                let script = document.createElement("script");
-                script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
-                document.body.appendChild(script);
-            }
+            setTimeout(function () {
+                let countryInput = document.querySelector(".niceCountryInput");
+                if (countryInput) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
+                    document.body.appendChild(script);
+                }
 
-            let popper = document.querySelector(".popper");
-            if (popper) {
-                let script = document.createElement("script");
-                script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
-                document.body.appendChild(script);
-            }
+                let popper = document.querySelector(".popper");
+                if (popper) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
+                    document.body.appendChild(script);
+                }
 
-            let slick = document.querySelector(".slick");
-            if (slick) {
-                let script = document.createElement("script");
-                script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
-                document.body.appendChild(script);
-            }
-
+                let slick = document.querySelector(".slick");
+                if (slick) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
+                    document.body.appendChild(script);
+                }
+            }, 10000); 
            
         };
     </script>
     <?php if (isMobile()): ?>
         <script>
             window.onload = function () {
-                let swiper = document.querySelector(".niceswiper");
-                if (swiper) {
-                    let script = document.createElement("script");
-                    // Check if the screen width is mobile (for example, less than 768px)
-                    if (window.innerWidth <= 768) {
-                        // For mobile, load script with defer
-                        script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
-                        script.defer = true;
-                    } else {
-                        // For desktop, load script with defer as requested
-                        script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
-                        script.defer = true;
+                setTimeout(function () {
+                    let swiper = document.querySelector(".niceswiper");
+                    if (swiper) {
+                        let script = document.createElement("script");
+                        // Check if the screen width is mobile (for example, less than 768px)
+                        if (window.innerWidth <= 768) {
+                            // For mobile, load script with defer
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        } else {
+                            // For desktop, load script with defer as requested
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        }
+                        document.body.appendChild(script);
                     }
-                    document.body.appendChild(script);
-                }
+                }, 10000); 
             };
         </script>
     <?php else: ?>
