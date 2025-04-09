@@ -14,17 +14,40 @@
         content="Digital Transformation Company, Digital Transformation Services, Digital Transformation Solutions. ">
 
     <link rel="preload" as="image" href="<?php echo $siteurl; ?>assets/images/index/banner-bg.webp" type="image/webp" />
-    <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-
+    <?php if (isMobile()): ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+               
+                setTimeout(function () {
+                    var fontStyle = document.createElement("style");
+                    fontStyle.innerHTML = `
+                        @font-face {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
+                            font-display: swap;
+                        }
+                        body { font-family: 'Poppins', sans-serif; }
+                    `;
+                    document.head.appendChild(fontStyle);
+                }, 10000); // Delay of 10 seconds
+                
+            });
+        </script>
+    <?php else: ?>
+        <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
+                font-display: swap;
+            }
+        </style>
+    <?php endif; ?>
     <style>
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
-            font-display: swap;
-        }
-        
         .d-mobile{
             display:none !important;
         }
