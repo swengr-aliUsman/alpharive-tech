@@ -131,7 +131,56 @@
 </section>
 
 
-    <section class="clent-review">
+<?php if (isMobile()): ?>
+<section class="clent-review">
+        <div class="contain-width">
+            <div class="clients-box">
+                <div class="review-box">
+                    <div class="client-icon">
+                        <img src="<?php echo $siteurl; ?>assets/images/landing/icon-1.svg" class="img-fluid"
+                            alt="cryptocurrency-exchange-development" loading="lazy" width="31" height="31" />
+                    </div>
+                    <p>100 <span>+</span></p>
+                    <span>Trusted Clients
+                    </span>
+                </div>
+                <div class="review-box">
+                    <div class="client-icon">
+                        <img src="<?php echo $siteurl; ?>assets/images/landing/icon-2.svg" class="img-fluid"
+                            alt="cryptocurrency-exchange-development" loading="lazy" width="31" height="31" />
+                    </div>
+                    <p>40 <span>+</span></p>
+                    <span>Blockchain Experts</span>
+                </div>
+                <div class="review-box">
+                    <div class="client-icon">
+                        <img src="<?php echo $siteurl; ?>assets/images/landing/icon-3.svg" class="img-fluid"
+                            alt="cryptocurrency-exchange-development" loading="lazy" width="31" height="31" />
+                    </div>
+                    <p>150 <span>+</span></p>
+                    <span>Successful projects </span>
+                </div>
+                <div class="review-box">
+                    <div class="client-icon">
+                        <img src="<?php echo $siteurl; ?>assets/images/landing/icon-4.svg" class="img-fluid"
+                            alt="cryptocurrency-exchange-development" loading="lazy" width="31" height="31" />
+                    </div>
+                    <p>3 <span>+</span></p>
+                    <span>Years of Experience</span>
+                </div>
+                <div class="review-box">
+                    <div class="client-icon">
+                        <img src="<?php echo $siteurl; ?>assets/images/landing/icon-5.svg" class="img-fluid"
+                            alt="cryptocurrency-exchange-development" loading="lazy" width="31" height="31" />
+                    </div>
+                    <p>30 <span>+</span></p>
+                    <span>Nations served</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <?php else: ?>
+        <section class="clent-review">
         <div class="contain-width">
             <div class="clients-box">
                 <div class="review-box" data-aos="fade-right">
@@ -178,6 +227,7 @@
             </div>
         </div>
     </section>
+    <?php endif; ?>
     <section class="transformation-solutions section-top-pt">
 
         <div class="contain-width">
