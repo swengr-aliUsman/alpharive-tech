@@ -101,7 +101,6 @@
             <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 <h1 style="font-size: 3.2rem !important;
         line-height: 1.4 !important;
-        font-family: Roboto !important;
         min-height: 170px !important;">Blockchain Development Company</h1>
                 <p>Where Innovative Ideas Meet <span class="txt-type d-desktop" data-wait="4000" data-words='["Expert", "Smart","Passionate"]' style="color: #e2000f;width:100px;min-width:150px;display:inline-block;font-size:23px">Expert</span><span class="txt-type d-mobile" style="color: #e2000f;width:100px;min-width:150px;display:inline-block;font-size:23px">Expert</span> Minds<br>
                     to Make an Entrepreneur.
