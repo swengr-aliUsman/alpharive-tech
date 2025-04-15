@@ -425,9 +425,8 @@ $(window).scroll(function(){
         }
 
     </script>
-
 <script>
-    function loadExternalScripts() {
+    setTimeout(function () {
         // Google Analytics
         var ga = document.createElement("script");
         ga.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D";
@@ -447,27 +446,10 @@ $(window).scroll(function(){
         tawk.charset = 'UTF-8';
         tawk.setAttribute('crossorigin', '*');
         document.head.appendChild(tawk);
-    }
 
-    window.addEventListener('scroll', loadExternalScripts, { once: true });
-    window.addEventListener('click', loadExternalScripts, { once: true });
+    }, 5000); // 5000 milliseconds = 5 seconds
 </script>
 
-
-<script>
-    function loadTawkTo() {
-        var s1 = document.createElement("script");
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/634cea41daff0e1306d25507/1ijnpu4el';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        document.head.appendChild(s1);
-    }
-
-    // Load after scroll or click
-    window.addEventListener('scroll', loadTawkTo, { once: true });
-    window.addEventListener('click', loadTawkTo, { once: true });
-</script>
 
   
 
