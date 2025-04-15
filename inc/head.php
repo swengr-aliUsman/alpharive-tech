@@ -1,20 +1,32 @@
-<!-- included in 58 file -->
-<link rel="stylesheet" type="text/css" href="assets/css/header.css<?php echo $version; ?>" rel="preload" />
-<link rel="stylesheet" type="text/css" href="assets/css/custom.css<?php echo $version; ?>" fetchpriority="low" />
-<link rel="preload" href="assets/css/footer.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!-- Optimized CSS Includes -->
 
-<link rel="preload" href="assets/css/media.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!-- Critical: Header Styles -->
+<link rel="preload" href="assets/css/header.css<?php echo $version; ?>" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/header.css<?php echo $version; ?>"></noscript>
+
+<!-- Custom Styles -->
+<link rel="preload" href="assets/css/custom.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/custom.css<?php echo $version; ?>"></noscript>
+
+<!-- Footer Styles -->
+<link rel="preload" href="assets/css/footer.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="assets/css/footer.css<?php echo $version; ?>"></noscript>
+
+<!-- Media Queries -->
+<link rel="preload" href="assets/css/media.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="assets/css/media.css<?php echo $version; ?>"></noscript>
-<link rel="preload" href="<?php echo $siteurl; ?>assets/css/root.min.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+<!-- Root Theme Styles -->
+<link rel="preload" href="<?php echo $siteurl; ?>assets/css/root.min.css<?php echo $version; ?>" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/root.min.css<?php echo $version; ?>"></noscript>
 
-<!-- included in 71 file -->
-<link rel="preload" href="<?php echo $siteurl; ?>css/contact.css<?php echo $version; ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<!-- Latest Font Awesome CDN -->
+<!-- Contact Page Specific -->
+<link rel="preload" href="<?php echo $siteurl; ?>css/contact.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl; ?>css/contact.css<?php echo $version; ?>"></noscript>
+
+<!-- Font Awesome (Non-blocking) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
 
-
-
-
-<!-- included in 61 files -->
-<link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/aos.css<?php echo $version; ?>" fetchpriority="low">
+<!-- AOS Animation Styles -->
+<link rel="preload" href="<?php echo $siteurl; ?>assets/css/aos.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/aos.css<?php echo $version; ?>"></noscript>

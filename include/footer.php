@@ -447,7 +447,7 @@ $(window).scroll(function(){
         tawk.setAttribute('crossorigin', '*');
         document.head.appendChild(tawk);
 
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 10000); //10000 milliseconds = 5 seconds
 </script>
 
 
