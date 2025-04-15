@@ -106,14 +106,6 @@
     </div>
 </section>
 
-<!-- <section class="ctaPopBtn">
-        <a href="https://api.whatsapp.com/send?phone=919994248706&text=*Hi%20there!%20I%20am%20looking%20for%20your%20Services,%20Shall%20we%20Start%20the%20discussion*%20Lead%20From%20https://opris.exchange/" target="_blank" class="btn whatsappBtn btnGlowGreen">
-           <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>Connect Whatsapp
-                   </a>
-        <a href="https://telegram.me/Opris_sales" target="_blank" class="btn telegramBtn btnGlowBlue ml-2">
-            <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>Connect Telegram
-        </a>
-</section> -->
 
 <div class="assistance-bx" id="appo-container">
 
@@ -433,45 +425,50 @@ $(window).scroll(function(){
         }
 
     </script>
-    
-<!-- Google Analytics -->
-<script>
-    function loadGoogleAnalytics() {
-        var script = document.createElement("script");
-        script.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D";
-        script.async = true;
-        document.head.appendChild(script);
 
-        script.onload = function () {
+<script>
+    function loadExternalScripts() {
+        // Google Analytics
+        var ga = document.createElement("script");
+        ga.src = "https://www.googletagmanager.com/gtag/js?id=G-N4LQ0H5J5D";
+        ga.async = true;
+        document.head.appendChild(ga);
+        ga.onload = function () {
             window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
             gtag('config', 'G-N4LQ0H5J5D', { 'debug_mode': true });
         };
+
+        // Tawk.to
+        var tawk = document.createElement("script");
+        tawk.src = 'https://embed.tawk.to/634cea41daff0e1306d25507/1ijnpu4el';
+        tawk.async = true;
+        tawk.charset = 'UTF-8';
+        tawk.setAttribute('crossorigin', '*');
+        document.head.appendChild(tawk);
     }
 
-    // Load GA only after the user scrolls or interacts with the page
-    window.addEventListener('scroll', loadGoogleAnalytics, { once: true });
-    window.addEventListener('click', loadGoogleAnalytics, { once: true });
-</script>
-<!-- End Google Analytics -->
-
-<!--Start of Tawk.to Script-->
-
-<div id='tawk_634cea41daff0e1306d25507'></div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/634cea41daff0e1306d25507/1ijnpu4el';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);})();
+    window.addEventListener('scroll', loadExternalScripts, { once: true });
+    window.addEventListener('click', loadExternalScripts, { once: true });
 </script>
 
-<!--End of Tawk.to Script-->
+
+<script>
+    function loadTawkTo() {
+        var s1 = document.createElement("script");
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/634cea41daff0e1306d25507/1ijnpu4el';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        document.head.appendChild(s1);
+    }
+
+    // Load after scroll or click
+    window.addEventListener('scroll', loadTawkTo, { once: true });
+    window.addEventListener('click', loadTawkTo, { once: true });
+</script>
+
   
 
 
