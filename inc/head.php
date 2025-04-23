@@ -1,20 +1,20 @@
 <!-- Optimized CSS Includes -->
 
 <!-- Critical: Header Styles -->
-<link rel="preload" href="assets/css/header.css<?php echo $version; ?>" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="<?php echo $siteurl  ?>assets/css/header.css<?php echo $version; ?>" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="assets/css/header.css<?php echo $version; ?>"></noscript>
 
 <!-- Custom Styles -->
-<link rel="preload" href="assets/css/custom.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/custom.css<?php echo $version; ?>"></noscript>
+<link rel="preload" href="<?php echo $siteurl  ?>assets/css/custom.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl  ?>assets/css/custom.css<?php echo $version; ?>"></noscript>
 
 <!-- Footer Styles -->
-<link rel="preload" href="assets/css/footer.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/footer.css<?php echo $version; ?>"></noscript>
+<link rel="preload" href="<?php echo $siteurl  ?>assets/css/footer.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl  ?>assets/css/footer.css<?php echo $version; ?>"></noscript>
 
 <!-- Media Queries -->
-<link rel="preload" href="assets/css/media.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="assets/css/media.css<?php echo $version; ?>"></noscript>
+<link rel="preload" href="<?php echo $siteurl  ?>assets/css/media.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="<?php echo $siteurl  ?>assets/css/media.css<?php echo $version; ?>"></noscript>
 
 <!-- Root Theme Styles -->
 <link rel="preload" href="<?php echo $siteurl; ?>assets/css/root.min.css<?php echo $version; ?>" as="style" fetchpriority="high" onload="this.onload=null;this.rel='stylesheet'">
