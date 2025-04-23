@@ -42,7 +42,7 @@
                                     <ul class="p-0">
                                            <li><a href="<?php echo $siteurl; ?>binance-clone-script/">Binance Clone Script</a></li>
                                             <li><a href="<?php echo $siteurl; ?>coinbase-clone-script/">Coinbase Clone Script</a></li>
-                                            <li><a href="<?php echo $siteurl; ?>kraken-clone-script/">Kraken Clone Script</a></li>
+                                            <li><a href="<?php echo $siteurl; ?>kraken-clone-script.php">Kraken Clone Script</a></li>
                                             <li><a href="<?php echo $siteurl; ?>kucoin-clone-script/">Kucoin Clone Script</a></li>
                                             <li><a href="<?php echo $siteurl; ?>paxful-clone-script/">Paxful Clone Script</a></li>
                                             <li><a href="<?php echo $siteurl; ?>remitano-clone-script/">Remitano Clone Script</a></li>
