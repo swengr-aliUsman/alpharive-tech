@@ -37,33 +37,54 @@
    
     <link rel="canonical" href="<?php echo $siteurl; ?>white-label-cryptocurrency-exchange-development/" />
 
-
+    <?php if (isMobile()): ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+               
+                setTimeout(function () {
+                    var fontStyle = document.createElement("style");
+                    fontStyle.innerHTML = `
+                        @font-face {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
+                            font-display: swap;
+                        }
+                        body { font-family: 'Poppins', sans-serif; }
+                    `;
+                    document.head.appendChild(fontStyle);
+                }, 10000); // Delay of 10 seconds
+                
+            });
+        </script>
+    <?php else: ?>
+        <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
+                font-display: swap;
+            }
+        </style>
+    <?php endif; ?>
     <style>
-    @font-face {
-        font-family: poppins;
-        font-style: normal;
-        src: url("../fonts/Poppins-Regular.otf");
-        font-display: swap;
+        .d-mobile{
+            display:none !important;
+        }
     </style>
-    
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/bootstrap.min.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/White-label-crypto-exchange-development-company.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/footer.css"  fetchpriority="low"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/form.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/media.css" fetchpriority="low"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/contact.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assetsindex/css/fontawesome/css/all.min.css" as="font" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/aos.css" fetchpriority="low">
-        <link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/swiper-bundle.min.css">
-          <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/owl.carousel.min.css" fetchpriority="low">
-     <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/owl.theme.css" fetchpriority="low">
-     <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/owl.theme.min.css" fetchpriority="low">
-    <link rel="preload" href="<?php echo $siteurl; ?>/assets/images/logo.webp" as="image" fetchpriority="high">
-  
-    <link rel="icon" type="image/x-icon" href="<?php echo $siteurl; ?>Images/favicon.png">
 
+
+    <!-- here is head file exist in all files -->
+    <?php include('inc/head.php'); ?>
+    <!-- here is head file exist in all files -->
+    <!-- Extra files -->
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
+    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/index.css<?php echo $version; ?>" />
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/swiper-bundle.min.css" fetchpriority="low">
+    <!-- Extra files -->
 
 </head>
 
@@ -1170,273 +1191,447 @@
     <?php include('include/form-inner.php'); ?>
     
     
-    <?php include('include/footer.php'); ?>
+   <?php include('include/footer.php'); ?>
+    <script defer="true" async src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js" async defer></script>
+    <script defer="true" async src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                let countryInput = document.querySelector(".niceCountryInput");
+                if (countryInput) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
+                    document.body.appendChild(script);
+                }
 
-    <script src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js" defer></script>
-    <script src="<?php echo $siteurl; ?>js/countrySelect.js"></script>
-    
-    <script src="<?php echo $siteurl; ?>js/script1.js"></script>
-<script src="<?php echo $siteurl; ?>assets/js/owl.carousel.min.js"></script>
+                let popper = document.querySelector(".popper");
+                if (popper) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
+                    document.body.appendChild(script);
+                }
 
-    <script async>
-    AOS.init({
-        once: false,
-    });
+                let slick = document.querySelector(".slick");
+                if (slick) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
+                    document.body.appendChild(script);
+                }
+            }, 10000); 
+           
+        };
     </script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
-  
-  <!-- Initialize Swiper -->
-  <script>
-  var swiperEffect = new Swiper(".swiperEffect", {
-    loop: true,
-    effect: "cards",
-    grabCursor: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    creativeEffect: {
-      prev: {
-        translate: [0, 0, 0],
-        opacity: 1
-      },
-      next: {
-        translate: [0, 0, 0],
-        opacity: 1
-      }
-    },
-    on: {
-      init: function () {
-        // Ensure all slides have a white background when initialized
-        document.querySelectorAll('.swiper-slide').forEach(slide => {
-          slide.style.backgroundColor = 'white';
-        });
-      },
-      slideChange: function () {
-        // Ensure background remains white when slides change
-        document.querySelectorAll('.swiper-slide').forEach(slide => {
-          slide.style.backgroundColor = 'white';
-        });
-      }
-    }
-  });
-</script>
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const thumbnails = document.querySelectorAll(".thumbnail");
-    const mainImage = document.getElementById("carouselp-main-image");
-    const title = document.getElementById("carouselp-title");
-    const description = document.getElementById("carouselp-description");
-    const paginationDots = document.querySelectorAll(".pagination-dot");
-
-    let currentIndex = 0;
-    let autoplayInterval;
-
-    // Function to update carousel
-    function updateCarousel(index) {
-      thumbnails.forEach((thumb, idx) => {
-        if (idx === index) {
-          thumb.classList.add("active");
-          mainImage.src = thumb.getAttribute("data-large");
-          title.textContent = thumb.getAttribute("data-title");
-          description.textContent = thumb.getAttribute("data-description");
-          mainImage.style.opacity = "0";
-          setTimeout(() => (mainImage.style.opacity = "1"), 100);
-        } else {
-          thumb.classList.remove("active");
-        }
-      });
-
-      paginationDots.forEach((dot, idx) => {
-        dot.classList.toggle("active", idx === index);
-      });
-    }
-
-    // Function to start autoplay
-    function startAutoplay() {
-      autoplayInterval = setInterval(() => {
-        currentIndex = (currentIndex + 1) % thumbnails.length;
-        updateCarousel(currentIndex);
-      }, 5000); // Change slide every 3 seconds
-    }
-
-    // Function to stop autoplay
-    function stopAutoplay() {
-      clearInterval(autoplayInterval);
-    }
-
-    // Click event for pagination dots
-    paginationDots.forEach((dot, idx) => {
-      dot.addEventListener("click", () => {
-        stopAutoplay();
-        currentIndex = idx;
-        updateCarousel(currentIndex);
-        startAutoplay();
-      });
-    });
-
-    // Stop autoplay when hovering over the main image
-    mainImage.addEventListener("mouseenter", () => {
-      stopAutoplay();
-    });
-
-    // Restart autoplay when the mouse leaves the main image
-    mainImage.addEventListener("mouseleave", () => {
-      startAutoplay();
-    });
-
-    // Initialize carousel
-    updateCarousel(currentIndex);
-    startAutoplay();
-  });
-</script>
+    <?php if (isMobile()): ?>
+        <script>
+            window.onload = function () {
+                setTimeout(function () {
+                    let swiper = document.querySelector(".niceswiper");
+                    if (swiper) {
+                        let script = document.createElement("script");
+                        // Check if the screen width is mobile (for example, less than 768px)
+                        if (window.innerWidth <= 768) {
+                            // For mobile, load script with defer
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        } else {
+                            // For desktop, load script with defer as requested
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        }
+                        document.body.appendChild(script);
+                    }
+                }, 10000); 
+            };
+        </script>
+    <?php else: ?>
+        <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <?php endif; ?>
+    <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
 
     <script>
-    $(document).ready(function() {
-        $('.accrd-panel-head').click(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).siblings('.accrd-panel-body').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
-                $(this).siblings('.accrd-panel-body').slideDown(200);
-                $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-            }
-        });
-        $('.accrd-panel-head-cdp').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-cdp').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-cdp').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
-                $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
-                $(this).parent('.block-cdp').addClass('slide-cls');
-            }
-        });
-        $('.accrd-panel-head-sdl').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sdl').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
-                $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
-                $(this).parent('.block-sdl').addClass('slide-cls');
-            }
-        });
-        $('.accrd-panel-head-sps').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sps').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sps').slideDown(200);
-                $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
-                $(this).parent('.block-sps').addClass('slide-cls');
-            }
-        });
-        $('.inner-risk-head').click(function() {
-            $(this).addClass('active');
-            $(this).siblings('.inner-risk-body').slideDown(200);
-            $(this).parent('.inner-risk').addClass('top-bordered');
+        window.addEventListener('load', () => {
+        AOS.init({
+            once: true, // Ensures animations only happen once (prevents unnecessary shifts)
+            duration: 800, // Adjust animation speed to be smoother
+            easing: 'ease-out', // Adds smooth transition
         });
     });
+
+    </script>
+    <!-- Get to know about the cryptocurrency exchange software development services -->
+
+
+    <script type="text/javascript">
+        // Timeline Scroll Section
+
+        var items = $(".timeline li"),
+
+            timelineHeight = $(".timeline ul").height(),
+
+            greyLine = $('.default-line'),
+
+            lineToDraw = $('.draw-line');
+
+        // sets the height that the greyLine (.default-line) should be according to `.timeline ul` height
+
+        // run this function only if draw line exists on the page
+
+        if (lineToDraw.length) {
+
+            $(window).on('scroll', function () {
+
+                // Need to constantly get '.draw-line' height to compare against '.default-line'
+
+                var redLineHeight = lineToDraw.height(),
+
+                    greyLineHeight = greyLine.height(),
+
+                    windowDistance = $(window).scrollTop(),
+
+                    windowHeight = $(window).height() / 2,
+
+                    timelineDistance = $(".timeline").offset().top;
+
+                if (windowDistance >= timelineDistance - windowHeight) {
+
+                    line = windowDistance - timelineDistance + windowHeight;
+
+                    if (line <= greyLineHeight) {
+
+                        lineToDraw.css({
+
+                            'height': line + 20 + 'px'
+
+                        });
+
+                    }
+
+                }
+
+                // This takes care of adding the class in-view to the li:before items
+
+                var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true);
+
+                items.each(function (index) {
+
+                    var circlePosition = $(this).offset();
+
+                    if (bottom > circlePosition.top) {
+
+                        $(this).addClass('in-view');
+
+                    } else {
+
+                        $(this).removeClass('in-view');
+
+                    }
+
+                });
+
+            });
+
+        }
     </script>
 
+    <script>
+        $(document).ready(function () {
 
-<script id="rendered-js">
-jQuery("#carousel").owlCarousel({
-  autoplay: false,
-  rewind: false, /* use rewind if you don't want loop */
-  margin: 25,
-  loop: true,
-  /*
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-  */
-  responsiveClass: true,
-  autoHeight: true,
-  autoplayTimeout: 7000,
-  smartSpeed: 800,
-  nav: true,
-  navText: [
-  '<button aria-label="Previous slide"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9675 18.5675L13.2 20.3363L7.89624 15.0325L13.2 9.72876L14.9675 11.4963L12.6825 13.7825H22.1037V16.2825H12.6825L14.9675 18.5675Z" fill="#FF2B2B" /><path fill-rule="evenodd" clip-rule="evenodd" d="M23.75 1.25C25.0761 1.25 26.3479 1.77678 27.2855 2.71447C28.2232 3.65215 28.75 4.92392 28.75 6.25V23.75C28.75 25.0761 28.2232 26.3479 27.2855 27.2855C26.3479 28.2232 25.0761 28.75 23.75 28.75H6.25C4.92392 28.75 3.65215 28.2232 2.71447 27.2855C1.77678 26.3479 1.25 25.0761 1.25 23.75L1.25 6.25C1.25 4.92392 1.77678 3.65215 2.71447 2.71447C3.65215 1.77678 4.92392 1.25 6.25 1.25L23.75 1.25ZM26.25 6.25V23.75C26.25 24.413 25.9866 25.0489 25.5178 25.5178C25.0489 25.9866 24.413 26.25 23.75 26.25H6.25C5.58696 26.25 4.95107 25.9866 4.48223 25.5178C4.01339 25.0489 3.75 24.413 3.75 23.75L3.75 6.25C3.75 5.58696 4.01339 4.95107 4.48223 4.48223C4.95107 4.01339 5.58696 3.75 6.25 3.75L23.75 3.75C24.413 3.75 25.0489 4.01339 25.5178 4.48223C25.9866 4.95107 26.25 5.58696 26.25 6.25Z" fill="#FF2B2B" /></svg></button>',
-  '<button aria-label="Next slide"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.0325 17.5675L15.8 19.3363L21.1038 14.0325L15.8 8.72876L14.0325 10.4963L16.3175 12.7825H6.89626V15.2825H16.3175L14.0325 17.5675Z" fill="url(#paint0_linear_1_622)" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 0.25C3.92392 0.25 2.65215 0.776784 1.71447 1.71447C0.776785 2.65215 0.25 3.92392 0.25 5.25V22.75C0.25 24.0761 0.776785 25.3479 1.71447 26.2855C2.65215 27.2232 3.92392 27.75 5.25 27.75H22.75C24.0761 27.75 25.3479 27.2232 26.2855 26.2855C27.2232 25.3479 27.75 24.0761 27.75 22.75V5.25C27.75 3.92392 27.2232 2.65215 26.2855 1.71447C25.3479 0.776784 24.0761 0.25 22.75 0.25L5.25 0.25ZM2.75 5.25V22.75C2.75 23.413 3.01339 24.0489 3.48223 24.5178C3.95107 24.9866 4.58696 25.25 5.25 25.25H22.75C23.413 25.25 24.0489 24.9866 24.5178 24.5178C24.9866 24.0489 25.25 23.413 25.25 22.75V5.25C25.25 4.58696 24.9866 3.95107 24.5178 3.48223C24.0489 3.01339 23.413 2.75 22.75 2.75L5.25 2.75C4.58696 2.75 3.95107 3.01339 3.48223 3.48223C3.01339 3.95107 2.75 4.58696 2.75 5.25Z" fill="url(#paint1_linear_1_622)" /><defs><linearGradient id="paint0_linear_1_622" x1="0.804451" y1="12.8499" x2="10.1882" y2="26.7207" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1717" /><stop offset="1" stop-color="#FF6461" /></linearGradient><linearGradient id="paint1_linear_1_622" x1="-11.5413" y1="10.9341" x2="14.5408" y2="39.719" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1717" /><stop offset="1" stop-color="#FF6461" /></linearGradient></defs></svg></button>'],
-  responsive: {
-    0: {
-      items: 1 },
+            $('.accrd-panel-head').click(function () {
 
+                if ($(this).hasClass('active')) {
 
-    600: {
-      items: 2 },
+                    $(this).removeClass('active');
 
+                    $(this).siblings('.accrd-panel-body').slideUp(200);
 
-    1024: {
-      items: 3 },
+                    $(this).parent('.block-1').removeClass('coloured');
 
+                } else {
 
-    1366: {
-      items: 3 } } });
+                    $('.accrd-panel-head').removeClass('active');
 
-      jQuery("#carousel_one").owlCarousel({
-  autoplay: true,
-  rewind: false, /* use rewind if you don't want loop */
-  margin: 25,
-  loop: true,
-  /*
-  animateOut: 'fadeOut',
-  animateIn: 'fadeIn',
-  */
-  responsiveClass: true,
-  autoHeight: true,
-  autoplayTimeout: 7000,
-  smartSpeed: 800,
-  nav: true,
-  navText: [
-  '<button aria-label="Previous slide"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.9675 18.5675L13.2 20.3363L7.89624 15.0325L13.2 9.72876L14.9675 11.4963L12.6825 13.7825H22.1037V16.2825H12.6825L14.9675 18.5675Z" fill="#FF2B2B" /><path fill-rule="evenodd" clip-rule="evenodd" d="M23.75 1.25C25.0761 1.25 26.3479 1.77678 27.2855 2.71447C28.2232 3.65215 28.75 4.92392 28.75 6.25V23.75C28.75 25.0761 28.2232 26.3479 27.2855 27.2855C26.3479 28.2232 25.0761 28.75 23.75 28.75H6.25C4.92392 28.75 3.65215 28.2232 2.71447 27.2855C1.77678 26.3479 1.25 25.0761 1.25 23.75L1.25 6.25C1.25 4.92392 1.77678 3.65215 2.71447 2.71447C3.65215 1.77678 4.92392 1.25 6.25 1.25L23.75 1.25ZM26.25 6.25V23.75C26.25 24.413 25.9866 25.0489 25.5178 25.5178C25.0489 25.9866 24.413 26.25 23.75 26.25H6.25C5.58696 26.25 4.95107 25.9866 4.48223 25.5178C4.01339 25.0489 3.75 24.413 3.75 23.75L3.75 6.25C3.75 5.58696 4.01339 4.95107 4.48223 4.48223C4.95107 4.01339 5.58696 3.75 6.25 3.75L23.75 3.75C24.413 3.75 25.0489 4.01339 25.5178 4.48223C25.9866 4.95107 26.25 5.58696 26.25 6.25Z" fill="#FF2B2B" /></svg></button>',
-  '<button aria-label="Next slide"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.0325 17.5675L15.8 19.3363L21.1038 14.0325L15.8 8.72876L14.0325 10.4963L16.3175 12.7825H6.89626V15.2825H16.3175L14.0325 17.5675Z" fill="url(#paint0_linear_1_622)" /><path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 0.25C3.92392 0.25 2.65215 0.776784 1.71447 1.71447C0.776785 2.65215 0.25 3.92392 0.25 5.25V22.75C0.25 24.0761 0.776785 25.3479 1.71447 26.2855C2.65215 27.2232 3.92392 27.75 5.25 27.75H22.75C24.0761 27.75 25.3479 27.2232 26.2855 26.2855C27.2232 25.3479 27.75 24.0761 27.75 22.75V5.25C27.75 3.92392 27.2232 2.65215 26.2855 1.71447C25.3479 0.776784 24.0761 0.25 22.75 0.25L5.25 0.25ZM2.75 5.25V22.75C2.75 23.413 3.01339 24.0489 3.48223 24.5178C3.95107 24.9866 4.58696 25.25 5.25 25.25H22.75C23.413 25.25 24.0489 24.9866 24.5178 24.5178C24.9866 24.0489 25.25 23.413 25.25 22.75V5.25C25.25 4.58696 24.9866 3.95107 24.5178 3.48223C24.0489 3.01339 23.413 2.75 22.75 2.75L5.25 2.75C4.58696 2.75 3.95107 3.01339 3.48223 3.48223C3.01339 3.95107 2.75 4.58696 2.75 5.25Z" fill="url(#paint1_linear_1_622)" /><defs><linearGradient id="paint0_linear_1_622" x1="0.804451" y1="12.8499" x2="10.1882" y2="26.7207" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1717" /><stop offset="1" stop-color="#FF6461" /></linearGradient><linearGradient id="paint1_linear_1_622" x1="-11.5413" y1="10.9341" x2="14.5408" y2="39.719" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1717" /><stop offset="1" stop-color="#FF6461" /></linearGradient></defs></svg></button>'],
-  responsive: {
-    0: {
-      items: 1 },
+                    $(this).addClass('active');
 
+                    $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
 
-    600: {
-      items: 1 },
+                    $(this).siblings('.accrd-panel-body').slideDown(200);
 
+                    $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
 
-    1024: {
-      items: 1 },
+                    $(this).parent('.block-1').addClass('coloured');
 
+                }
 
-    1366: {
-      items: 1 } } });
-//# sourceURL=pen.js
+            });
+
+            $('.accrd-panel-head-cdp').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-cdp').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-cdp').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
+
+                    $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
+
+                    $(this).parent('.block-cdp').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sdl').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sdl').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sdl').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
+
+                    $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
+
+                    $(this).parent('.block-sdl').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sps').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sps').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sps').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sps').slideDown(200);
+
+                    $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
+
+                    $(this).parent('.block-sps').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.inner-risk-head').click(function () {
+
+                $(this).addClass('active');
+
+                $(this).siblings('.inner-risk-body').slideDown(200);
+
+                $(this).parent('.inner-risk').addClass('top-bordered');
+
+            });
+
+        });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const thumbnailsContainer = document.getElementById("carouselp-thumbnails");
+            const thumbnails = document.querySelectorAll(".thumbnail");
+            const mainImage = document.getElementById("carouselp-main-image");
+            const title = document.getElementById("carouselp-title");
+            const description = document.getElementById("carouselp-description");
 
+
+            let currentIndex = 0; // Tracks the currently displayed thumbnail
+            const thumbnailWidth = 147; // Thumbnail width including margins
+            const containerWidth = thumbnailsContainer.offsetWidth;
+            const visibleThumbnails = Math.floor(containerWidth / thumbnailWidth);
+            const totalThumbnails = thumbnails.length;
+
+            // Function to update the main image
+            function updateMainImage(index) {
+                thumbnails.forEach((thumb, idx) => {
+                    thumb.classList.toggle("active", idx === index);
+                });
+
+                const selectedThumbnail = thumbnails[index];
+                mainImage.src = selectedThumbnail.getAttribute("data-large");
+                title.textContent = selectedThumbnail.getAttribute("data-title");
+                description.textContent = selectedThumbnail.getAttribute("data-description");
+            }
+
+
+            // Attach click event to each thumbnail to update the main image
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => {
+                    updateMainImage(index);
+                });
+            });
+
+            // Initialize the carousel with the first thumbnail active
+            updateMainImage(0);
+        });
+
+    </script>
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Swiper !== "undefined") {
+      const swiper = new Swiper(".reviewSwiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+        on: {
+          init() {
+            scaleSlides();
+          },
+          slideChangeTransitionStart() {
+            scaleSlides();
+          },
+        },
+      });
+
+      function scaleSlides() {
+        document.querySelectorAll(".reviewSwiper .swiper-slide").forEach(slide => {
+          slide.style.transform = "scale(0.6)";
+        });
+
+        const activeSlide = document.querySelector(".reviewSwiper .swiper-slide.swiper-slide-active");
+        if (activeSlide) {
+          activeSlide.style.transform = "scale(1)";
+        }
+      }
+    }
+  });
+</script>
+
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper after the page has loaded
+    if (typeof Swiper !== "undefined") {
+      new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          767: { slidesPerView: 2 },
+          950: { slidesPerView: 3 },
+        },
+      });
+    }
+
+    // TypeWriter Effect
+    class TypeWriter {
+      constructor(txtElement, words, wait = 1000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = "";
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.isDeleting = false;
+        setTimeout(() => this.type(), 500); // Start after delay
+      }
+
+      type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        this.txt = this.isDeleting
+          ? fullTxt.substring(0, this.txt.length - 1)
+          : fullTxt.substring(0, this.txt.length + 1);
+
+        this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;width:100px;min-width:150px;display:inline-block;font-size:23px">${this.txt}</span>`;
+
+        let typeSpeed = this.isDeleting ? 25 : 50;
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          typeSpeed = this.wait;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.wordIndex++;
+          typeSpeed = 400;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Initialize TypeWriter if element exists
+    const txtElement = document.querySelector(".txt-type");
+    if (txtElement) {
+      const words = JSON.parse(txtElement.getAttribute("data-words"));
+      const wait = txtElement.getAttribute("data-wait") || 1000;
+      new TypeWriter(txtElement, words, wait);
+    }
+  });
+</script>
 
 </body>
 
