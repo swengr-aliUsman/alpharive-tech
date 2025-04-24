@@ -113,7 +113,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="banner-right">
                         <img src="<?php echo $siteurl; ?>Images/whitelabel-crypto-wallet-opris.png"
-                            alt="whitelabel-crypto-wallet-development">
+                            alt="whitelabel-crypto-wallet-development" style="width: 100%">
                     </div>
                 </div>
             </div>
@@ -159,21 +159,21 @@
                 <div class="business-overwhelm">
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-1.png" alt="Million-Users">
+                        style="width: 100%" src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-1.png" alt="Million-Users">
                         </div>
                         <h3>80+</h3>
                         <p>Million Traders</p>
                     </div>
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-2.png"
+                        style="width: 100%" src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-2.png"
                                 alt="Bitcoins-Preserved"></div>
                         <h3>250+</h3>
                         <p>Supported Cryptos</p>
                     </div>
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-3.png" alt="Global-Users">
+                        style="width: 100%" src="<?php echo $siteurl; ?>Images/white-label-new-overwhelm-3.png" alt="Global-Users">
                         </div>
                         <h3>100+</h3>
                         <p>Supported Countries</p>
@@ -217,17 +217,17 @@
                     <h3>Own your crypto exchange business suite like white label cryptocurrency wallet</h3>
                     <ul class="list-own-crypto">
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Ready-to-launch-on-demand-apps"></div>
                             Ready to launch on-demand apps
                         </li>
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Free-project-consultation"></div>
                             Free project consultation
                         </li>
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Layered-Architecture"></div>
                             Layered Architecture
                         </li>
@@ -244,7 +244,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 own-your-crypto-right">
                     <div class="own-your-crypto-img"><img
-                            src="<?php echo $siteurl; ?>Images/white-label-mobile-banner-screen.webp" class="img-fluid"
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/white-label-mobile-banner-screen.webp" class="img-fluid"
                             alt="Crypto-wallet-development"></div>
                 </div>
             </div>
@@ -256,7 +256,7 @@
                 application</h3>
             <div class="crypto-para">
             </div>
-            <div class="bsc-scalable-architect-img"><img src="<?php echo $siteurl; ?>Images/bsc-scalable-architect.png"
+            <div class="bsc-scalable-architect-img"><img style="width: 100%" src="<?php echo $siteurl; ?>Images/bsc-scalable-architect.png"
                     alt="white-label-architecture"></div>
             <div class="intelignce-btn bsc-scalable-architect-btn" style="margin-top:0px !important">
                 <ul>
@@ -278,7 +278,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
                             src="<?php echo $siteurl; ?>Images/prime-feat-white-label-1.webp"
-                            alt="Powerful-trading-engine"></div>
+                            alt="Powerful-trading-engine" style="width: 100%"></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="primary-eat-bsc-cont">
@@ -318,12 +318,12 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-2.webp" alt="Atomic-swaps"></div>
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-2.webp" alt="Atomic-swaps"></div>
                 </div>
             </div>
             <div class="row odd-primary-bsc">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                    <div class="prime-featbsc-img"><img src="<?php echo $siteurl; ?>Images/prime-feat-white-label-3.png"
+                    <div class="prime-featbsc-img"><img style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-3.png"
                             alt="Common trading types"></div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -365,14 +365,14 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-4.webp" alt="Derivative-trading">
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-4.webp" alt="Derivative-trading">
                     </div>
                 </div>
             </div>
             <div class="row odd-primary-bsc">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-5.webp" alt="Margin-trading">
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-5.webp" alt="Margin-trading">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -413,13 +413,13 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-6.webp" alt="OTC-trading"></div>
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-6.webp" alt="OTC-trading"></div>
                 </div>
             </div>
             <div class="row odd-primary-bsc">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-7.webp" alt="Wallet-integration">
+                    style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-7.webp" alt="Wallet-integration">
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -460,7 +460,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="prime-featbsc-img"><img
-                            src="<?php echo $siteurl; ?>Images/prime-feat-white-label-8.webp" alt="OTC-trading"></div>
+                    style="width: 100%" style="width: 100%" src="<?php echo $siteurl; ?>Images/prime-feat-white-label-8.webp" alt="OTC-trading"></div>
                 </div>
             </div>
         </div>

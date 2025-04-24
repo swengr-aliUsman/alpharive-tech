@@ -31,16 +31,3 @@
 <link rel="preload" href="<?php echo $siteurl; ?>assets/css/aos.css<?php echo $version; ?>" as="style" fetchpriority="low" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="<?php echo $siteurl; ?>assets/css/aos.css<?php echo $version; ?>"></noscript>
 
-
-<style>
-    body img{
-        width: 100%;
-    }
-    .inner-tab-content img{
-        width: unset ;
-    }
-    .inner-tab-content {
-        display: flex;
-    flex-wrap: wrap;
-    }
-</style>
