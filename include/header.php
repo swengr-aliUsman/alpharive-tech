@@ -180,8 +180,8 @@
                                                                 <div class="row">
                                                                     <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7">
                                                                         <ul>
-                                                                           <li><a href="<?php echo $siteurl; ?>blog/tap-to-earn-game-development-company/">Tap to Earn Game Development Company</a></li>
-                                                                            <li><a href="<?php echo $siteurl; ?>blog/play-to-earn-game-development-company/">Play to Earn Game Development Company</a></li>
+                                                                           <li><a href="<?php echo $siteurl; ?>contactus">Tap to Earn Game Development Company</a></li>
+                                                                            <li><a href="<?php echo $siteurl; ?>contactus">Play to Earn Game Development Company</a></li>
                                                                             <li><a href="<?php echo $siteurl; ?>blog/hamster-kombat-clone-script/">Hamster Kombat Clone Script</a></li>
                                                                             <li><a href="<?php echo $siteurl; ?>blog/w-coin-clone-script/">W-Coin Clone Script</a></li>
                                                                             <li><a href="<?php echo $siteurl; ?>blog/okx-racer-clone-scrip/">OKX Racer Clone Script</a></li>

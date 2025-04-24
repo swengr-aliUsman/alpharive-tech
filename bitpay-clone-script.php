@@ -17,8 +17,8 @@
     <!--- Facebook OG code -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Bitpay Clone App Script | Try LIVE DEMO Now - Opris” /> 
-    <meta property=" og:description" content=”Start your cryptocurrency payment gateway app with white label bitpay
+    <meta property="og:title" content="Bitpay Clone App Script | Try LIVE DEMO Now - Opris" /> 
+    <meta property="og:description" content="Start your cryptocurrency payment gateway app with white label bitpay
         clone script with fully customizable.Reach out to us" />
     <meta property="og:url" content="<?php echo $siteurl; ?>bitpay-clone-script/" />
     <meta property="og:image" content="<?php echo $siteurl; ?>Images/bitpay-clone-script.png" />
@@ -34,33 +34,54 @@
         content="Start your cryptocurrency payment gateway app with white label bitpay clone script with fully customizable.Reach out to us" />
     <meta name="twitter:title" content="Bitpay Clone App Script | Try LIVE DEMO Now - Opris" />
     <meta name="twitter:image" content="<?php echo $siteurl; ?>Images/bitpay-clone-script.png" />
+    <?php if (isMobile()): ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+               
+                setTimeout(function () {
+                    var fontStyle = document.createElement("style");
+                    fontStyle.innerHTML = `
+                        @font-face {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
+                            font-display: swap;
+                        }
+                        body { font-family: 'Poppins', sans-serif; }
+                    `;
+                    document.head.appendChild(fontStyle);
+                }, 10000); // Delay of 10 seconds
+                
+            });
+        </script>
+    <?php else: ?>
+        <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
+                font-display: swap;
+            }
+        </style>
+    <?php endif; ?>
+    <style>
+        .d-mobile{
+            display:none !important;
+        }
+    </style>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/bootstrap.min.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/custom.css" fetchpriority="high">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/custom-new.css" fetchpriority="high">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/bitpay-clone-script.css?v=1.2" fetchpriority="high">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/form.css" fetchpriority="high">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/responsive.css" fetchpriority="high">
-    <!-- <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/countrySelect.css" fetchpriority="low"> -->
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/demo.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/main.css" fetchpriority="low">
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/fontawesome/css/all.min.css" fetchpriority="low" as="font" media="all">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" fetchpriority="low" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" fetchpriority="low" />
-        <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/aos.css" fetchpriority="low" media="all">
 
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/niceCountryInput.css" fetchpriority="low"> -->    <!---->
-    <link rel="canonical" href="https://www.opris.exchange/bitpay-clone-script/" />
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" fetchpriority="low" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/header.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/footer.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/custom.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/media.css" fetchpriority="low"  media="all"/>    
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/contact.css" fetchpriority="low" media="all">
-   
+    <!-- here is head file exist in all files -->
+    <?php include('inc/head.php'); ?>
+    <!-- here is head file exist in all files -->
+    <!-- Extra files -->
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
+    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/index.css<?php echo $version; ?>" />
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/swiper-bundle.min.css" fetchpriority="low">
+    <!-- Extra files -->
 </head>
 
 <body class="homepage-page">
@@ -82,27 +103,27 @@
                             better experience to swap, store, buy and send cryptos easily.</p>
                         <ul>
                             <li>
-                                <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list.webp"
+                                <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list.webp"
                                         alt="Banner checklist" width="24" height="20"></div>
                                 14 Business Days Set Up
                             </li>
                             <li>
-                                <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list.webp"
+                                <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list.webp"
                                         alt="Banner checklist" width="24" height="20"></div>
                                 Technical Support 24/7
                             </li>
                             <li>
-                                <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list.webp"
+                                <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list.webp"
                                         alt="Banner checklist" width="24" height="20"></div>
                                 Web-based and Mobile apps Supported
                             </li>
                             <li>
-                                <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list.webp"
+                                <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list.webp"
                                         alt="Banner checklist" width="24" height="20"></div>
                                 Software Constant Updates & Release Notes
                             </li>
                             <li>
-                                <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list.webp"
+                                <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list.webp"
                                         alt="Banner checklist" width="24" height="20"></div>
                                 Hosting on Client's side- 100% whitelabel solutions
                             </li>
@@ -111,7 +132,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="banner-right">
-                        <img src="<?php echo $siteurl; ?>Images/bitpay-clone-software.png" alt="bitpay-clone-software" fetchpriority="high">
+                        <img style="width: 100%;" src="<?php echo $siteurl; ?>Images/bitpay-clone-software.png" alt="bitpay-clone-software" fetchpriority="high">
                     </div>
                 </div>
             </div>
@@ -153,21 +174,21 @@
                 <div class="business-overwhelm">
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-1.svg" alt="Supported-Tokens">
+                        style="width: 100%;" src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-1.svg" alt="Supported-Tokens">
                         </div>
                         <h3>4L+</h3>
                         <p>Supported Tokens</p>
                     </div>
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-2.svg" alt="Crypto-Wallets">
+                        style="width: 100%;" src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-2.svg" alt="Crypto-Wallets">
                         </div>
                         <h3>100+</h3>
                         <p>Crypto Wallets</p>
                     </div>
                     <div class="business-overwhelm-inner">
                         <div class="overwhelmed-outer-img"><img
-                                src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-3.svg" alt="Million-Users">
+                        style="width: 100%;" src="<?php echo $siteurl; ?>Images/Svg/overwhelmed-bitpay-3.svg" alt="Million-Users">
                         </div>
                         <h3>200+</h3>
                         <p>Million Users</p>
@@ -208,17 +229,17 @@
                     <h4>Looking to start or scale up your enterprise-grade payment gateway app like bitpay?</h4>
                     <ul class="list-own-crypto">
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Ready-to-launch-on-demand-apps"></div>
                             Ready to launch on-demand apps
                         </li>
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Free-project-consultation"></div>
                             Free project consultation
                         </li>
                         <li>
-                            <div class="tick-img-banner"><img src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
+                            <div class="tick-img-banner"><img style="width: 100%;" src="<?php echo $siteurl; ?>Images/banner-list-tick.png"
                                     alt="Layered-Architecture"></div>
                             Layered Architecture
                         </li>
@@ -1701,214 +1722,449 @@
         </div>
     </section>
     <?php include('include/form-inner.php'); ?>
+   
     <?php include('include/footer.php'); ?>
-    <script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
-    <!--- Footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous" defer>
+    <script defer="true" async src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js" async defer></script>
+    <script defer="true" async src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                let countryInput = document.querySelector(".niceCountryInput");
+                if (countryInput) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
+                    document.body.appendChild(script);
+                }
+
+                let popper = document.querySelector(".popper");
+                if (popper) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
+                    document.body.appendChild(script);
+                }
+
+                let slick = document.querySelector(".slick");
+                if (slick) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
+                    document.body.appendChild(script);
+                }
+            }, 10000); 
+           
+        };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous" async>
-    </script>
-    <!--<script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>-->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" defer>
-    </script>
-    
-    
-    <script src="<?php echo $siteurl; ?>js/script.js" defer></script>
-    <script src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+    <?php if (isMobile()): ?>
+        <script>
+            window.onload = function () {
+                setTimeout(function () {
+                    let swiper = document.querySelector(".niceswiper");
+                    if (swiper) {
+                        let script = document.createElement("script");
+                        // Check if the screen width is mobile (for example, less than 768px)
+                        if (window.innerWidth <= 768) {
+                            // For mobile, load script with defer
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        } else {
+                            // For desktop, load script with defer as requested
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        }
+                        document.body.appendChild(script);
+                    }
+                }, 10000); 
+            };
+        </script>
+    <?php else: ?>
+        <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <?php endif; ?>
+    <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
 
     <script>
-    AOS.init({
-        once: false,
-    });
-    </script>
-    <script>
-    $(document).ready(function() {
-        $('.accrd-panel-head').click(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).siblings('.accrd-panel-body').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
-                $(this).siblings('.accrd-panel-body').slideDown(200);
-                $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-            }
-        });
-        $('.accrd-panel-head-cdp').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-cdp').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-cdp').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
-                $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
-                $(this).parent('.block-cdp').addClass('slide-cls');
-            }
-        });
-        $('.accrd-panel-head-sdl').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-sdl').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-sdl').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sdl').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
-                $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
-                $(this).parent('.block-sdl').addClass('slide-cls');
-            }
-        });
-        $('.accrd-panel-head-sps').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sps').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sps').slideDown(200);
-                $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
-                $(this).parent('.block-sps').addClass('slide-cls');
-            }
-        });
-        $('.inner-risk-head').click(function() {
-            $(this).addClass('active');
-            $(this).siblings('.inner-risk-body').slideDown(200);
-            $(this).parent('.inner-risk').addClass('top-bordered');
+        window.addEventListener('load', () => {
+        AOS.init({
+            once: true, // Ensures animations only happen once (prevents unnecessary shifts)
+            duration: 800, // Adjust animation speed to be smoother
+            easing: 'ease-out', // Adds smooth transition
         });
     });
+
     </script>
-    <script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontents");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+    <!-- Get to know about the cryptocurrency exchange software development services -->
+
+
+    <script type="text/javascript">
+        // Timeline Scroll Section
+
+        var items = $(".timeline li"),
+
+            timelineHeight = $(".timeline ul").height(),
+
+            greyLine = $('.default-line'),
+
+            lineToDraw = $('.draw-line');
+
+        // sets the height that the greyLine (.default-line) should be according to `.timeline ul` height
+
+        // run this function only if draw line exists on the page
+
+        if (lineToDraw.length) {
+
+            $(window).on('scroll', function () {
+
+                // Need to constantly get '.draw-line' height to compare against '.default-line'
+
+                var redLineHeight = lineToDraw.height(),
+
+                    greyLineHeight = greyLine.height(),
+
+                    windowDistance = $(window).scrollTop(),
+
+                    windowHeight = $(window).height() / 2,
+
+                    timelineDistance = $(".timeline").offset().top;
+
+                if (windowDistance >= timelineDistance - windowHeight) {
+
+                    line = windowDistance - timelineDistance + windowHeight;
+
+                    if (line <= greyLineHeight) {
+
+                        lineToDraw.css({
+
+                            'height': line + 20 + 'px'
+
+                        });
+
+                    }
+
+                }
+
+                // This takes care of adding the class in-view to the li:before items
+
+                var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true);
+
+                items.each(function (index) {
+
+                    var circlePosition = $(this).offset();
+
+                    if (bottom > circlePosition.top) {
+
+                        $(this).addClass('in-view');
+
+                    } else {
+
+                        $(this).removeClass('in-view');
+
+                    }
+
+                });
+
+            });
+
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    document.getElementById("defaultOpen").click();
     </script>
+
     <script>
-    function openCities(evt, cityName) {
-        var j, tabcontentss, tablinkss;
-        tabcontentss = document.getElementsByClassName("tabcontentss");
-        for (j = 0; j < tabcontentss.length; j++) {
-            tabcontentss[j].style.display = "none";
-        }
-        tablinkss = document.getElementsByClassName("tablinkss");
-        for (j = 0; j < tablinkss.length; j++) {
-            tablinkss[j].className = tablinkss[j].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-    document.getElementById("defaultOpens").click();
+        $(document).ready(function () {
+
+            $('.accrd-panel-head').click(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    $(this).siblings('.accrd-panel-body').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body').slideDown(200);
+
+                    $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-cdp').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-cdp').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-cdp').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
+
+                    $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
+
+                    $(this).parent('.block-cdp').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sdl').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sdl').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sdl').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
+
+                    $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
+
+                    $(this).parent('.block-sdl').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sps').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sps').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sps').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sps').slideDown(200);
+
+                    $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
+
+                    $(this).parent('.block-sps').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.inner-risk-head').click(function () {
+
+                $(this).addClass('active');
+
+                $(this).siblings('.inner-risk-body').slideDown(200);
+
+                $(this).parent('.inner-risk').addClass('top-bordered');
+
+            });
+
+        });
     </script>
-    <!-- <script type="text/javascript">
-$(window).scroll(function() {
-var y = $(this).scrollTop();
-if (y > $('#opris-process').offset().top ) {
-$('#opris-process').addClass('fixed-cls');
-} else {
-$('#opris-process').removeClass('fixed-cls');
-}
-});
-$(window).scroll(function(evt) {
-var y = $(this).scrollTop();
-if (y > $('#tech-modern').offset().top - ($(window).height() / 3.2) ) {
-$('#opris-process').removeClass('fixed-cls');
-} 
-});
-$(window).scroll(function() {
-var y = $(this).scrollTop();
-if (y > $('#cdp-id').offset().top ) {
-$('#cdp-id').addClass('rotate-cls');
-}
-if (y > $('#sdl-id').offset().top ) {
-$('#sdl-id').addClass('rotate-cls');
-}
-if (y > $('#sps-id').offset().top ) {
-$('#sps-id').addClass('rotate-cls');
-}
-if (y > $('#blank-id-scroll').offset().top - ($(window).height() / 1.5)) {
-$('.box-show').each(function(i){
-setInterval(function(){
-$('.box-show').eq(i).addClass('is-showing');
-}, 400 * (i+1));
-});
-}
-});
-</script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
+
     <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
+        document.addEventListener("DOMContentLoaded", () => {
+            const thumbnailsContainer = document.getElementById("carouselp-thumbnails");
+            const thumbnails = document.querySelectorAll(".thumbnail");
+            const mainImage = document.getElementById("carouselp-main-image");
+            const title = document.getElementById("carouselp-title");
+            const description = document.getElementById("carouselp-description");
+
+
+            let currentIndex = 0; // Tracks the currently displayed thumbnail
+            const thumbnailWidth = 147; // Thumbnail width including margins
+            const containerWidth = thumbnailsContainer.offsetWidth;
+            const visibleThumbnails = Math.floor(containerWidth / thumbnailWidth);
+            const totalThumbnails = thumbnails.length;
+
+            // Function to update the main image
+            function updateMainImage(index) {
+                thumbnails.forEach((thumb, idx) => {
+                    thumb.classList.toggle("active", idx === index);
+                });
+
+                const selectedThumbnail = thumbnails[index];
+                mainImage.src = selectedThumbnail.getAttribute("data-large");
+                title.textContent = selectedThumbnail.getAttribute("data-title");
+                description.textContent = selectedThumbnail.getAttribute("data-description");
+            }
+
+
+            // Attach click event to each thumbnail to update the main image
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => {
+                    updateMainImage(index);
+                });
+            });
+
+            // Initialize the carousel with the first thumbnail active
+            updateMainImage(0);
+        });
+
+    </script>
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Swiper !== "undefined") {
+      const swiper = new Swiper(".reviewSwiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
         autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
+          delay: 5000,
         },
         breakpoints: {
-            // when window width is >= 320px
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 480px
-            480: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 640px
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
-            // when window width is >= 640px
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            }
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+        on: {
+          init() {
+            scaleSlides();
+          },
+          slideChangeTransitionStart() {
+            scaleSlides();
+          },
+        },
+      });
+
+      function scaleSlides() {
+        document.querySelectorAll(".reviewSwiper .swiper-slide").forEach(slide => {
+          slide.style.transform = "scale(0.6)";
+        });
+
+        const activeSlide = document.querySelector(".reviewSwiper .swiper-slide.swiper-slide-active");
+        if (activeSlide) {
+          activeSlide.style.transform = "scale(1)";
         }
-    });
-    </script>
-    <script>
-    $('.carousel').on('slid.bs.carousel', function() {
-        $(".carousel-indicators2 button").removeClass("active");
-        indicators = $(".carousel-indicators button.active").data("bs-slide-to");
-        a = $(".carousel-indicators2").find("[data-bs-slide-to='" + indicators + "']").addClass("active");
-        console.log(indicators);
-    })
-    </script>
-    
+      }
+    }
+  });
+</script>
+
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper after the page has loaded
+    if (typeof Swiper !== "undefined") {
+      new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          767: { slidesPerView: 2 },
+          950: { slidesPerView: 3 },
+        },
+      });
+    }
+
+    // TypeWriter Effect
+    class TypeWriter {
+      constructor(txtElement, words, wait = 1000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = "";
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.isDeleting = false;
+        setTimeout(() => this.type(), 500); // Start after delay
+      }
+
+      type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        this.txt = this.isDeleting
+          ? fullTxt.substring(0, this.txt.length - 1)
+          : fullTxt.substring(0, this.txt.length + 1);
+
+        this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;width:100px;min-width:150px;display:inline-block;font-size:23px">${this.txt}</span>`;
+
+        let typeSpeed = this.isDeleting ? 25 : 50;
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          typeSpeed = this.wait;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.wordIndex++;
+          typeSpeed = 400;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Initialize TypeWriter if element exists
+    const txtElement = document.querySelector(".txt-type");
+    if (txtElement) {
+      const words = JSON.parse(txtElement.getAttribute("data-words"));
+      const wait = txtElement.getAttribute("data-wait") || 1000;
+      new TypeWriter(txtElement, words, wait);
+    }
+  });
+</script>
+ 
     
 
  
