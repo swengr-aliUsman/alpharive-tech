@@ -36,4 +36,11 @@
     body img{
         width: 100%;
     }
+    .inner-tab-content img{
+        width: unset ;
+    }
+    .inner-tab-content {
+        display: flex;
+    flex-wrap: wrap;
+    }
 </style>
