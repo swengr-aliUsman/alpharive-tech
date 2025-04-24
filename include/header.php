@@ -62,7 +62,7 @@
                                 </label>
                                 <ul class="insight drop-menu animated fadeIn new-menu payment_menu">
                                     <li class="w-auto" ><a href="<?php echo $siteurl; ?>crypto-payment-gateway-development/">Crypto Payment Gateway Development</a></li>
-                                    <li class="w-auto" ><a href="<?php echo $siteurl; ?>blog/white-label-crypto-payment-gateway/">White Label Crypto Payment Gateway</a></li>
+                                    <li class="w-auto" ><a href="<?php echo $siteurl; ?>coinpayments-clone-script/">White Label Crypto Payment Gateway</a></li>
                                     <li class="w-auto" ><a href="<?php echo $siteurl; ?>coinpayments-clone-script/">Coinpayments Clone Script</a></li>
                                     <li class="w-auto" ><a href="<?php echo $siteurl; ?>bitpay-clone-script/">Bitpay Clone Script</a></li>
                                 </ul>
