@@ -35,31 +35,61 @@
         content="Learn about our Cryptocurrency Exchange Software Solution team and their expertise in building and managing successful platforms." />
     <meta name="twitter:title" content="About us - Opris exchange" />
     <meta name="twitter:image" content="<?php echo $siteurl; ?>Images/cryptocurrency-exchange-software.png" />
+    <?php if (isMobile()): ?>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+               
+                setTimeout(function () {
+                    var fontStyle = document.createElement("style");
+                    fontStyle.innerHTML = `
+                        @font-face {
+                            font-family: 'Poppins';
+                            font-style: normal;
+                            font-weight: 400;
+                            src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf") format("opentype");
+                            font-display: swap;
+                        }
+                        body { font-family: 'Poppins', sans-serif; }
+                    `;
+                    document.head.appendChild(fontStyle);
+                }, 10000); // Delay of 10 seconds
+                
+            });
+        </script>
+    <?php else: ?>
+        <link rel="preload" href="<?php echo $siteurl; ?>fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+        <style>
+            @font-face {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                src: url("<?php echo $siteurl; ?>fonts/Poppins-Regular.otf') format('opentype')");
+                font-display: swap;
+            }
+        </style>
+    <?php endif; ?>
+    <style>
+        .d-mobile{
+            display:none !important;
+        }.grid-images {
+    max-width: 845px !important;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+    </style>
 
-    <!-- <link rel="icon" type="image/x-icon" href="assert/img/favicon.png"> -->
- <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/header.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/custom.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/aboutus.css?v=1.1">
-       <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/custom.css" fetchpriority="low"/>
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/footer.css" />
-  <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/contact.css">
-<link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/media.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/form.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/responsive.css">
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/countrySelect.css"> -->    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/demo.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/software.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/clone-script.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/main.css">
-    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/fontawesome/css/all.min.css" fetchpriority="low" as="font" media="all">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/aos.css" fetchpriority="low" media="all">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/niceCountryInput.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>css/servicemainsec.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- here is head file exist in all files -->
+    <?php include('inc/head.php'); ?>
+    <!-- here is head file exist in all files -->
+    <!-- Extra files -->
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/boostrap/bootstrap.min.css" fetchpriority="low">
+    <link rel="stylesheet" type="text/css" href="<?php echo $siteurl; ?>assets/css/index.css<?php echo $version; ?>" />
+    <link rel="stylesheet" href="<?php echo $siteurl; ?>assetsindex/css/swiper-bundle.min.css" fetchpriority="low">
+    <!-- Extra files -->
     <!-- Link Swiper's CSS -->
     <link rel="canonical" href="https://www.opris.exchange/aboutus/" />
 
@@ -311,253 +341,447 @@
      <?php include('include/form-inner.php'); ?>
      
 
-    <?php include('include/footer.php'); ?>
+     <?php include('include/footer.php'); ?>
+    <script defer="true" async src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
+    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js" async defer></script>
+    <script defer="true" async src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js<?php echo $version; ?>"></script>
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                let countryInput = document.querySelector(".niceCountryInput");
+                if (countryInput) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js";
+                    document.body.appendChild(script);
+                }
 
+                let popper = document.querySelector(".popper");
+                if (popper) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/popper.min.js";
+                    document.body.appendChild(script);
+                }
 
-    <div class="social-icons-contact-fixed">
-
-        <ul class="social-contact-list">
-
-            <li><a target="_blank" href="skype:cid.b4d98d670fe822a2?chat"><img
-                        src="<?php echo $siteurl; ?>Images/skype.png"
-                        alt="cryptocurrency-exchange-development-services"></a></li>
-
-            <li><a target="_blank" href="https://telegram.me/Opris_sales"><img
-                        src="<?php echo $siteurl; ?>Images/telegram.png"
-                        alt="cryptocurrency-exchange-development-services"></a></li>
-
-            <li><a target="_blank"
-                    href="https://api.whatsapp.com/send/?phone=%2B919994248706&text&type=phone_number&app_absent=0"><img
-                        src="<?php echo $siteurl; ?>Images/whatsapp.png"
-                        alt="cryptocurrency-exchange-development-services"></a></li>
-
-
-        </ul>
-
-    </div>
-
-
-    <div class="assistance-bx" id="appo-container">
-        <div class="inner-pop-up-home">
-            <a class="pclose" onclick="$('#appo-container').hide();">X</a>
-            <img src="<?php echo $siteurl; ?>Images/popup-avatar-logo.png" alt="Opris-Logo">
-            <h2>Let's Talk </h2>
-            <p> </p>
-            <p>We're ready to assist you over a <b>phone call</b> or a <b>video call</b>, it's your choice. Just select
-                a Date and a Time. See you there!</p>
-            <div class="btn-bottom">
-                <a class="btn right whats-pop-btn"
-                    href="https://api.whatsapp.com/send/?phone=%2B919994248706&text&type=phone_number&app_absent=0"
-                    target="_blank"><i class="fa-brands fa-whatsapp"></i><span>Whatsapp</span>
-                </a>
-                <a class="btn right tele-pop-btn" href="https://telegram.me/Opris_sales" target="_blank"> <i
-                        class="fa-brands fa-telegram"></i><span>Telegram</span>
-                </a>
-                <a class="btn left skpe-pop-btn" href="skype:cid.b4d98d670fe822a2?chat"><i
-                        class="fa-brands fa-skype"></i><span>Skype</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="<?php echo $siteurl; ?>assets/js/aos.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/3.3.1/jquery.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assets/js/bootstrap.bundle.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/popper.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/slick.min.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/countrySelect.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/niceCountryInput.js"></script>
-    <script src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
-    <script src="<?php echo $siteurl; ?>js/script1.js"></script>
-<script>
-    AOS.init({
-        once: false,
-    });
+                let slick = document.querySelector(".slick");
+                if (slick) {
+                    let script = document.createElement("script");
+                    script.src = "<?php echo $siteurl; ?>assetsindex/js/slick.min.js";
+                    document.body.appendChild(script);
+                }
+            }, 10000); 
+           
+        };
     </script>
+    <?php if (isMobile()): ?>
+        <script>
+            window.onload = function () {
+                setTimeout(function () {
+                    let swiper = document.querySelector(".niceswiper");
+                    if (swiper) {
+                        let script = document.createElement("script");
+                        // Check if the screen width is mobile (for example, less than 768px)
+                        if (window.innerWidth <= 768) {
+                            // For mobile, load script with defer
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        } else {
+                            // For desktop, load script with defer as requested
+                            script.src = "<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js";
+                            script.defer = true;
+                        }
+                        document.body.appendChild(script);
+                    }
+                }, 10000); 
+            };
+        </script>
+    <?php else: ?>
+        <script defer="true" src="<?php echo $siteurl; ?>assetsindex/js/swiper-bundle.min.js"></script>
+    <?php endif; ?>
+    <script defer="true" src="<?php echo $siteurl; ?>js/script1.js"></script>
+
+    <script>
+        window.addEventListener('load', () => {
+        AOS.init({
+            once: true, // Ensures animations only happen once (prevents unnecessary shifts)
+            duration: 800, // Adjust animation speed to be smoother
+            easing: 'ease-out', // Adds smooth transition
+        });
+    });
+
+    </script>
+    <!-- Get to know about the cryptocurrency exchange software development services -->
 
 
     <script type="text/javascript">
-    $('.responsive-ps').slick({
-        infinite: true,
-        speed: 1500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        autoplay: true,
-        dots: false,
-        responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    autoplay: true,
-                    dots: false,
+        // Timeline Scroll Section
+
+        var items = $(".timeline li"),
+
+            timelineHeight = $(".timeline ul").height(),
+
+            greyLine = $('.default-line'),
+
+            lineToDraw = $('.draw-line');
+
+        // sets the height that the greyLine (.default-line) should be according to `.timeline ul` height
+
+        // run this function only if draw line exists on the page
+
+        if (lineToDraw.length) {
+
+            $(window).on('scroll', function () {
+
+                // Need to constantly get '.draw-line' height to compare against '.default-line'
+
+                var redLineHeight = lineToDraw.height(),
+
+                    greyLineHeight = greyLine.height(),
+
+                    windowDistance = $(window).scrollTop(),
+
+                    windowHeight = $(window).height() / 2,
+
+                    timelineDistance = $(".timeline").offset().top;
+
+                if (windowDistance >= timelineDistance - windowHeight) {
+
+                    line = windowDistance - timelineDistance + windowHeight;
+
+                    if (line <= greyLineHeight) {
+
+                        lineToDraw.css({
+
+                            'height': line + 20 + 'px'
+
+                        });
+
+                    }
+
                 }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    dots: false,
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    dots: false,
-                }
-            }
-        ]
-    });
+
+                // This takes care of adding the class in-view to the li:before items
+
+                var bottom = lineToDraw.offset().top + lineToDraw.outerHeight(true);
+
+                items.each(function (index) {
+
+                    var circlePosition = $(this).offset();
+
+                    if (bottom > circlePosition.top) {
+
+                        $(this).addClass('in-view');
+
+                    } else {
+
+                        $(this).removeClass('in-view');
+
+                    }
+
+                });
+
+            });
+
+        }
     </script>
 
     <script>
-    $(document).ready(function() {
-        $('a.close-menu').click(function() {
-            $(this).parent('.collapse').removeClass('show');
+        $(document).ready(function () {
+
+            $('.accrd-panel-head').click(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    $(this).siblings('.accrd-panel-body').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body').slideDown(200);
+
+                    $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-cdp').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-cdp').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-cdp').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
+
+                    $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
+
+                    $(this).parent('.block-cdp').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sdl').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sdl').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sdl').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
+
+                    $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
+
+                    $(this).parent('.block-sdl').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.accrd-panel-head-sps').mouseover(function () {
+
+                if ($(this).hasClass('active')) {
+
+                    $(this).removeClass('active');
+
+                    // $(this).parent('.block-sps').removeClass('slide-cls');
+
+                    // $(this).siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).parent('.block-1').removeClass('coloured');
+
+                } else {
+
+                    $('.accrd-panel-head-sps').removeClass('active');
+
+                    $(this).addClass('active');
+
+                    $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
+
+                    $(this).siblings('.accrd-panel-body-sps').slideDown(200);
+
+                    $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
+
+                    $(this).parent('.block-1').addClass('coloured');
+
+                    $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
+
+                    $(this).parent('.block-sps').addClass('slide-cls');
+
+                }
+
+            });
+
+            $('.inner-risk-head').click(function () {
+
+                $(this).addClass('active');
+
+                $(this).siblings('.inner-risk-body').slideDown(200);
+
+                $(this).parent('.inner-risk').addClass('top-bordered');
+
+            });
+
         });
-        $('li.drop-down-menu-exch a').click(function() {
-            $(this).siblings('.drop-down-list-exch').slideDown(200);
-        });
-        $('li.exch-close-menu-list a').click(function() {
-            $('li.exch-close-menu-list').parent('.drop-down-list-exch').slideUp(200);
-        });
-        $('li.drop-down-menu-clone a').click(function() {
-            $(this).siblings('.drop-down-list-clone').slideDown(200);
-        });
-        $('li.clone-close-menu-list').click(function() {
-            $('li.clone-close-menu-list').parent('.drop-down-list-clone').slideUp(200);
-        });
-    });
     </script>
 
-
     <script>
-    $(document).ready(function() {
+        document.addEventListener("DOMContentLoaded", () => {
+            const thumbnailsContainer = document.getElementById("carouselp-thumbnails");
+            const thumbnails = document.querySelectorAll(".thumbnail");
+            const mainImage = document.getElementById("carouselp-main-image");
+            const title = document.getElementById("carouselp-title");
+            const description = document.getElementById("carouselp-description");
 
-        $('.accrd-panel-head').click(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                $(this).siblings('.accrd-panel-body').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head').siblings('.accrd-panel-body').slideUp(200);
-                $(this).siblings('.accrd-panel-body').slideDown(200);
-                $('.accrd-panel-head').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
+
+            let currentIndex = 0; // Tracks the currently displayed thumbnail
+            const thumbnailWidth = 147; // Thumbnail width including margins
+            const containerWidth = thumbnailsContainer.offsetWidth;
+            const visibleThumbnails = Math.floor(containerWidth / thumbnailWidth);
+            const totalThumbnails = thumbnails.length;
+
+            // Function to update the main image
+            function updateMainImage(index) {
+                thumbnails.forEach((thumb, idx) => {
+                    thumb.classList.toggle("active", idx === index);
+                });
+
+                const selectedThumbnail = thumbnails[index];
+                mainImage.src = selectedThumbnail.getAttribute("data-large");
+                title.textContent = selectedThumbnail.getAttribute("data-title");
+                description.textContent = selectedThumbnail.getAttribute("data-description");
             }
+
+
+            // Attach click event to each thumbnail to update the main image
+            thumbnails.forEach((thumb, index) => {
+                thumb.addEventListener("click", () => {
+                    updateMainImage(index);
+                });
+            });
+
+            // Initialize the carousel with the first thumbnail active
+            updateMainImage(0);
         });
 
-        $('.accrd-panel-head-cdp').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-cdp').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-cdp').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-cdp').siblings('.accrd-panel-body-cdp').slideUp(200);
-                $(this).siblings('.accrd-panel-body-cdp').slideDown(200);
-                $('.accrd-panel-head-cdp').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-cdp').parent('.block-cdp').removeClass('slide-cls');
-                $(this).parent('.block-cdp').addClass('slide-cls');
-            }
-        });
-
-
-        $('.accrd-panel-head-sdl').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-sdl').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-sdl').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sdl').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sdl').siblings('.accrd-panel-body-sdl').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sdl').slideDown(200);
-                $('.accrd-panel-head-sdl').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sdl').parent('.block-sdl').removeClass('slide-cls');
-                $(this).parent('.block-sdl').addClass('slide-cls');
-            }
-        });
-
-
-        $('.accrd-panel-head-sps').mouseover(function() {
-            if ($(this).hasClass('active')) {
-                $(this).removeClass('active');
-                // $(this).parent('.block-sps').removeClass('slide-cls');
-                // $(this).siblings('.accrd-panel-body-sps').slideUp(200);
-                $(this).parent('.block-1').removeClass('coloured');
-            } else {
-                $('.accrd-panel-head-sps').removeClass('active');
-                $(this).addClass('active');
-                $('.accrd-panel-head-sps').siblings('.accrd-panel-body-sps').slideUp(200);
-                $(this).siblings('.accrd-panel-body-sps').slideDown(200);
-                $('.accrd-panel-head-sps').parent('.block-1').removeClass('coloured');
-                $(this).parent('.block-1').addClass('coloured');
-                $('.accrd-panel-head-sps').parent('.block-sps').removeClass('slide-cls');
-                $(this).parent('.block-sps').addClass('slide-cls');
-            }
-        });
-
-
-        $('.inner-risk-head').click(function() {
-            $(this).addClass('active');
-            $(this).siblings('.inner-risk-body').slideDown(200);
-            $(this).parent('.inner-risk').addClass('top-bordered');
-        });
-
-    });
     </script>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof Swiper !== "undefined") {
+      const swiper = new Swiper(".reviewSwiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        autoplay: {
+          delay: 5000,
         },
-    });
-    </script>
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 10 },
+          768: { slidesPerView: 2, spaceBetween: 15 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        },
+        on: {
+          init() {
+            scaleSlides();
+          },
+          slideChangeTransitionStart() {
+            scaleSlides();
+          },
+        },
+      });
 
-    <script>
-    $(document).ready(function() {
-        $('.interested-to-see-bsc a.nav-link.menu-last').click(function() {
-            $("#appo-container").show()
+      function scaleSlides() {
+        document.querySelectorAll(".reviewSwiper .swiper-slide").forEach(slide => {
+          slide.style.transform = "scale(0.6)";
         });
-        $('.own-your-crypto-left a.nav-link.menu-last').click(function() {
-            $("#appo-container").show()
-        });
-        $('.our-story-section a.nav-link.menu-last').click(function() {
-            $("#appo-container").show()
-        });
-        $('.our-potential-section a.nav-link.menu-last').click(function() {
-            $("#appo-container").show()
-        });
-    })
-    </script>
 
+        const activeSlide = document.querySelector(".reviewSwiper .swiper-slide.swiper-slide-active");
+        if (activeSlide) {
+          activeSlide.style.transform = "scale(1)";
+        }
+      }
+    }
+  });
+</script>
 
+    <script defer>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper after the page has loaded
+    if (typeof Swiper !== "undefined") {
+      new Swiper(".slide-content", {
+        slidesPerView: 3,
+        spaceBetween: 25,
+        loop: true,
+        grabCursor: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: { slidesPerView: 1 },
+          767: { slidesPerView: 2 },
+          950: { slidesPerView: 3 },
+        },
+      });
+    }
+
+    // TypeWriter Effect
+    class TypeWriter {
+      constructor(txtElement, words, wait = 1000) {
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt = "";
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.isDeleting = false;
+        setTimeout(() => this.type(), 500); // Start after delay
+      }
+
+      type() {
+        const current = this.wordIndex % this.words.length;
+        const fullTxt = this.words[current];
+
+        this.txt = this.isDeleting
+          ? fullTxt.substring(0, this.txt.length - 1)
+          : fullTxt.substring(0, this.txt.length + 1);
+
+        this.txtElement.innerHTML = `<span class="txt" style="color: #e2000f;width:100px;min-width:150px;display:inline-block;font-size:23px">${this.txt}</span>`;
+
+        let typeSpeed = this.isDeleting ? 25 : 50;
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+          typeSpeed = this.wait;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === "") {
+          this.isDeleting = false;
+          this.wordIndex++;
+          typeSpeed = 400;
+        }
+
+        setTimeout(() => this.type(), typeSpeed);
+      }
+    }
+
+    // Initialize TypeWriter if element exists
+    const txtElement = document.querySelector(".txt-type");
+    if (txtElement) {
+      const words = JSON.parse(txtElement.getAttribute("data-words"));
+      const wait = txtElement.getAttribute("data-wait") || 1000;
+      new TypeWriter(txtElement, words, wait);
+    }
+  });
+</script>
 
 </body>
 
