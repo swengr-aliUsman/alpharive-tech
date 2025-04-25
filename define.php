@@ -9,3 +9,8 @@ function isMobile() {
     return preg_match('/(iphone|ipod|ipad|android|blackberry|windows phone|opera mini|mobile)/i', $_SERVER['HTTP_USER_AGENT']);
 }
 ?>
+<style>
+    a{
+        text-decoration: none !important;
+    }
+</style>
